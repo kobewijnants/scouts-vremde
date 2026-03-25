@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="light" lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Scouts Vremde - De Gids naar Avontuur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind.config.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full flex justify-between items-center px-8 py-4 max-w-none bg-[#fdf9ef]/80 dark:bg-[#1c1c16]/80 backdrop-blur-md z-50">
+        <div class="text-2xl font-extrabold text-[#5a2e00] dark:text-[#ffb273] font-headline tracking-tight">
+            Scouts Vremde
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-[#3b6934] border-b-2 border-[#3b6934] pb-1 font-headline font-bold tracking-tight transition-colors duration-200" href="index.html">Home</a>
+            <a class="text-[#1c1c16] dark:text-[#fdf9ef] opacity-80 font-headline font-bold tracking-tight hover:text-[#5a2e00] transition-colors duration-200" href="pages/takken.html">Takken</a>
+            <a class="text-[#1c1c16] dark:text-[#fdf9ef] opacity-80 font-headline font-bold tracking-tight hover:text-[#5a2e00] transition-colors duration-200" href="pages/kalender.html">Kalender</a>
+            <a class="text-[#1c1c16] dark:text-[#fdf9ef] opacity-80 font-headline font-bold tracking-tight hover:text-[#5a2e00] transition-colors duration-200" href="pages/contact.html">Contact</a>
+        </div>
+        <button class="bg-primary hover:bg-primary-container text-on-primary px-6 py-2 rounded-full font-headline font-bold transition-transform scale-95 active:scale-90">
+            Inschrijven
+        </button>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative min-h-[870px] flex items-center px-8 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent z-10"></div>
+                <img class="w-full h-full object-cover" alt="Scouts rond een warm kampvuur in het bos tijdens de avond" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEWuhn9GalYjTnIiNTlTvX0uYBLESbEVhWo5lJRfdLM_BIewhD_WcqZn3KiNF1rsY7gm_5UuyzhkJkQQsZXaN3hr-CuCg-00z_p3lzbS-BKs8PwqFI38gWIhigu-8AycmMdSRWW6Pu0FWCLWIDLu9XvdmkHp-O9M_FULSHHnb50VZ0_6wCf6d_70Yms2pA_XLfFwdroF8s88CQ4nDT-D-NbVo59N2J8YknZxusfcJkbDTZ8DxGvBUpWNQJ3GRZ2lTZVwjUrKklG7E" />
+            </div>
+            <div class="relative z-20 max-w-2xl">
+                <span class="inline-block px-4 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-label font-bold text-xs uppercase tracking-widest mb-6">Sinds 1992</span>
+                <h1 class="font-headline text-6xl md:text-8xl font-extrabold text-primary leading-[1.1] tracking-tight mb-8">
+                    Ontdek het <span class="text-secondary italic">Avontuur</span> in Vremde!
+                </h1>
+                <p class="text-on-surface-variant text-lg md:text-xl mb-10 max-w-lg leading-relaxed">
+                    Bij Scouts Vremde bouwen we aan vriendschappen voor het leven, leren we van de natuur en beleven we elke week nieuwe uitdagingen.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2">
+                        Janneman
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                    <button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-surface-container-highest transition-all">
+                        Onze Werking
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Laatste Nieuws Section -->
+        <section class="py-24 px-8 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <div>
+                        <h2 class="font-headline text-4xl md:text-5xl font-bold text-primary mb-4">Laatste Nieuws</h2>
+                        <p class="text-on-surface-variant max-w-md">Blijf op de hoogte van onze laatste evenementen en aankondigingen.</p>
+                    </div>
+                    <a class="text-secondary font-bold flex items-center gap-2 hover:underline" href="#">
+                        Bekijk alle berichten <span class="material-symbols-outlined">trending_flat</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                    <!-- Featured News -->
+                    <div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-highest h-[500px]">
+                        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Grote groep scouts die samen een vlot bouwen op een meer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUSt-xB4aMsbKu1lzidf2_tksMbj-TwChuUdwcIxRJj_H337kuDZzooohjeTadVwQlsPWYiFjX9plXbPOd_mDn6kJ43OWKM_okKU9f2Uw6zdbeVICW0HTXxmEew74j94_KgVpM_5Y4990BazPDnoK3pjcYjD6wPubjjOswrX51A2ZeXqH51Ask-zqS19XNnXxRcI61EJUot2JKpLncjaM2L5Rre8BikW7X1NlGKPQE7S-UQ5sTr7g0zpWTUDpiK3otj8FpChhKndY" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 text-on-primary w-full">
+                            <span class="bg-secondary px-3 py-1 rounded text-xs font-bold mb-4 inline-block">Kamp 2024</span>
+                            <h3 class="text-3xl font-bold font-headline mb-2">De inschrijvingen voor het zomerkamp zijn geopend!</h3>
+                            <p class="opacity-80 max-w-xl">Bereid je voor op een onvergetelijke tiendaagse in de Ardense bossen. Pak je rugzak alvast maar in.</p>
+                        </div>
+                    </div>
+                    <!-- Small News 1 -->
+                    <div class="md:col-span-4 rounded-xl bg-surface-container p-8 flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+                        <div>
+                            <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-6">
+                                <span class="material-symbols-outlined">eco</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-3 font-headline">Grote Wafelverkoop</h3>
+                            <p class="text-on-surface-variant text-sm">Steun onze scouts en geniet van heerlijke ambachtelijke wafels. Bestellen kan tot volgende week zondag.</p>
+                        </div>
+                        <div class="mt-8 flex items-center justify-between">
+                            <span class="text-xs font-bold text-on-surface-variant opacity-60">12 MEI 2024</span>
+                            <span class="material-symbols-outlined text-secondary">arrow_right_alt</span>
+                        </div>
+                    </div>
+                    <!-- Small News 2 -->
+                    <div class="md:col-span-4 rounded-xl bg-surface-container p-8 flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+                        <div>
+                            <div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed-variant mb-6">
+                                <span class="material-symbols-outlined">volunteer_activism</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-3 font-headline">Ouderavond: Info Kamp</h3>
+                            <p class="text-on-surface-variant text-sm">We nodigen alle ouders uit voor een infomoment over de praktische regelingen van ons kamp.</p>
+                        </div>
+                        <div class="mt-8 flex items-center justify-between">
+                            <span class="text-xs font-bold text-on-surface-variant opacity-60">15 MEI 2024</span>
+                            <span class="material-symbols-outlined text-secondary">arrow_right_alt</span>
+                        </div>
+                    </div>
+                    <!-- Secondary Featured -->
+                    <div class="md:col-span-8 rounded-xl bg-secondary-container/30 p-8 flex flex-col md:flex-row gap-8 items-center border border-secondary-container/20">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-on-secondary-container mb-4 font-headline">Nieuwe Lokalen Update</h3>
+                            <p class="text-on-secondary-container opacity-80 mb-6">Dankzij jullie steun vorderen de werken aan ons nieuwe materiaalhok sneller dan verwacht!</p>
+                            <button class="bg-secondary text-on-secondary px-6 py-2 rounded-full text-sm font-bold">Lees het dagboek</button>
+                        </div>
+                        <div class="w-full md:w-1/3 aspect-video rounded-lg overflow-hidden">
+                            <img class="w-full h-full object-cover" alt="Bouwwerkzaamheden aan een houten blokhut" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsYR3GuRlHbV2CHCRCNncM1lHVNEFf7OKT-J9t2bzPsyZfrptH26Ctg5H-LpnvVps1S-KZjZzNRikA5BAzYptramBUXOQQjugrHARht0UgPc_kLx_J-TUhnm6PuJvrq3PodGgYM3Bp1NaONA0HjFpdwsCWEnsIlpJbMTuRGfDel-rGvKiCNWoeeVPAYaNwfuYFvZ-dI3V5XCHGb8EyhK5QfowUE55XZeCBeB5GR3nETC30flSa2CTYkKJk-TTnSgHVk9SVqK2yqtw" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kalender Teaser Section -->
+        <section class="py-24 px-8 bg-surface-container-high relative">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/3">
+                    <h2 class="font-headline text-4xl font-bold text-primary mb-6">Komende Vergaderingen</h2>
+                    <p class="text-on-surface-variant mb-8 leading-relaxed">
+                        Zet deze data alvast in je agenda. We verzamelen elke zondag om 9u30 aan onze lokalen.
+                    </p>
+                    <button class="flex items-center gap-3 text-secondary font-bold group">
+                        Volledige janneman bekijken
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                    </button>
+                </div>
+                <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+                    <!-- Event 1 -->
+                    <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-secondary font-bold text-3xl mb-1">19</div>
+                        <div class="text-on-surface-variant font-bold text-xs uppercase tracking-widest mb-4">Mei 2024</div>
+                        <h5 class="font-headline font-bold text-primary mb-2 text-lg">Zondagse Vergadering</h5>
+                        <p class="text-sm text-on-surface-variant opacity-80 mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base">schedule</span> 14:00 - 17:00
+                        </p>
+                        <span class="text-xs bg-secondary-container px-2 py-1 rounded text-on-secondary-container font-bold">Alle Takken</span>
+                    </div>
+                    <!-- Event 2 -->
+                    <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-secondary font-bold text-3xl mb-1">26</div>
+                        <div class="text-on-surface-variant font-bold text-xs uppercase tracking-widest mb-4">Mei 2024</div>
+                        <h5 class="font-headline font-bold text-primary mb-2 text-lg">Grote Bosspel Dag</h5>
+                        <p class="text-sm text-on-surface-variant opacity-80 mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base">schedule</span> 10:00 - 17:00
+                        </p>
+                        <span class="text-xs bg-tertiary-fixed px-2 py-1 rounded text-on-tertiary-fixed-variant font-bold">Welpen &amp; Jong-Verkenners</span>
+                    </div>
+                    <!-- Event 3 -->
+                    <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-secondary font-bold text-3xl mb-1">02</div>
+                        <div class="text-on-surface-variant font-bold text-xs uppercase tracking-widest mb-4">Juni 2024</div>
+                        <h5 class="font-headline font-bold text-primary mb-2 text-lg">Leidingsvergadering</h5>
+                        <p class="text-sm text-on-surface-variant opacity-80 mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base">schedule</span> 19:30 - 21:30
+                        </p>
+                        <span class="text-xs bg-surface-container-highest px-2 py-1 rounded text-on-surface-variant font-bold">Enkel Leiding</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / Community Section -->
+        <section class="py-24 px-8">
+            <div class="max-w-5xl mx-auto rounded-[3rem] bg-primary text-on-primary p-12 md:p-20 relative overflow-hidden text-center">
+                <div class="absolute top-0 right-0 p-12 opacity-10">
+                    <span class="material-symbols-outlined text-[10rem]" style="font-variation-settings: 'FILL' 1;">explore</span>
+                </div>
+                <h2 class="font-headline text-4xl md:text-5xl font-bold mb-6">Nog vragen over onze werking?</h2>
+                <p class="text-on-primary/80 max-w-2xl mx-auto mb-10 text-lg">
+                    Onze groepsleiding staat klaar om al je vragen te beantwoorden.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="pages/contact.html" class="bg-on-primary text-primary px-8 py-4 rounded-full font-headline font-bold hover:bg-primary-fixed transition-colors">
+                        Contacteer ons
+                    </a>
+                    <a href="pages/contact.html#lokalen" class="border-2 border-on-primary/30 text-on-primary px-8 py-4 rounded-full font-headline font-bold hover:bg-on-primary/10 transition-colors">
+                        Vind onze lokalen
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-start gap-8 bg-[#5a2e00] dark:bg-[#1c1c16] text-[#fdf9ef] font-body text-sm mt-20">
+        <div class="max-w-xs">
+            <div class="text-lg font-bold text-[#ffb273] mb-4">Scouts Vremde</div>
+            <p class="opacity-80 mb-6 italic">"De Gids naar Avontuur. Samen bouwen we aan een wereld vol ontdekking en vriendschap."</p>
+            <div class="flex gap-4">
+                <div class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+                    <span class="material-symbols-outlined text-base">public</span>
+                </div>
+                <div class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity">
+                    <span class="material-symbols-outlined text-base">share</span>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-12">
+            <div>
+                <h6 class="font-bold text-[#ffb273] mb-4 uppercase tracking-widest text-xs">Navigatie</h6>
+                <ul class="space-y-3">
+                    <li><a class="text-[#fdf9ef] opacity-80 hover:opacity-100 underline decoration-transparent hover:decoration-[#ffb273] transition-all" href="pages/takken.html">Onze Takken</a></li>
+                    <li><a class="text-[#fdf9ef] opacity-80 hover:opacity-100 underline decoration-transparent hover:decoration-[#ffb273] transition-all" href="pages/kalender.html">De Kalender</a></li>
+                    <li><a class="text-[#fdf9ef] opacity-80 hover:opacity-100 underline decoration-transparent hover:decoration-[#ffb273] transition-all" href="#">Documenten</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-bold text-[#ffb273] mb-4 uppercase tracking-widest text-xs">Sociaal</h6>
+                <ul class="space-y-3">
+                    <li><a class="text-[#fdf9ef] opacity-80 hover:opacity-100 underline decoration-transparent hover:decoration-[#ffb273] transition-all" href="#">Facebook</a></li>
+                    <li><a class="text-[#fdf9ef] opacity-80 hover:opacity-100 underline decoration-transparent hover:decoration-[#ffb273] transition-all" href="#">Instagram</a></li>
+                    <li><a class="text-[#fdf9ef] opacity-80 hover:opacity-100 underline decoration-transparent hover:decoration-[#ffb273] transition-all" href="#">Adres &amp; Kaart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="md:text-right">
+            <p class="opacity-60">&copy; <script>document.write(new Date().getFullYear())</script> Scouts Vremde. De Gids naar Avontuur.</p>
+            <p class="opacity-40 text-[10px] mt-2">Vrijwilligersorganisatie erkend door Scouts en Gidsen Vlaanderen</p>
+        </div>
+    </footer>
+
+</body>
+</html>

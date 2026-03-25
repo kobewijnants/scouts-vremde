@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Kapoenen - Scouts Vremde</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="../js/tailwind.config.js"></script>
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#fdf9ef]/80 dark:bg-stone-900/80 backdrop-blur-md">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+            <div class="text-2xl font-bold text-[#5a2e00] dark:text-stone-200 font-headline tracking-tight">
+                Scouts Vremde
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-[#5a2e00]/70 dark:text-stone-400 hover:text-[#3b6934] transition-colors font-headline font-bold" href="../index.html">Home</a>
+                <a class="text-[#3b6934] dark:text-emerald-400 border-b-2 border-[#3b6934] pb-1 font-headline font-bold" href="takken.html">Takken</a>
+                <a class="text-[#5a2e00]/70 dark:text-stone-400 hover:text-[#3b6934] transition-colors font-headline font-bold" href="kalender.html">Kalender</a>
+                <a class="text-[#5a2e00]/70 dark:text-stone-400 hover:text-[#3b6934] transition-colors font-headline font-bold" href="contact.html">Contact</a>
+            </div>
+            <button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm hover:scale-95 duration-200 ease-in-out">
+                Word Lid
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[614px] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover" alt="Mistig dennenbos bij dageraad met zachte zonnestralen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKdFlAAhbtQFNCEkVJBIbAFWWyNhe6Ulq03E4EN89azeyqNAGkXSnTKvDBCRYeog3cgcINOh3npnWdnw-84QIfC4c9WB9xoWQw-HCyY2IRd9MS2lyI5CTd3oH1TN56oynDNkZnCzuxlGl0GyHf55OsC0XH44yU20AT77VRMUPLizw3pEnEXKG8nUYW2M6maZwZgqzTsvcbbgYS77Hiq7Yx136yED0CR_iEPs1ZI7oX6G79Xc2YNq65XgDMhSYN83uNKaUM_miaeN4" />
+                <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+                <div class="inline-flex items-center gap-2 bg-secondary-fixed text-on-secondary-fixed-variant px-4 py-1.5 rounded-xl mb-6 font-label font-bold text-xs tracking-wider uppercase">
+                    <span class="material-symbols-outlined text-sm">child_care</span>
+                    6 tot 8 jaar
+                </div>
+                <h1 class="text-6xl md:text-8xl font-headline font-extrabold text-primary mb-4 tracking-tighter">
+                    Kapoenen
+                </h1>
+                <p class="max-w-xl text-lg text-on-surface-variant font-medium leading-relaxed mb-8">
+                    Waar de allerkleinsten hun eerste grote avonturen beleven in het groen van Vremde. Samen spelen, ontdekken en de wereld op zijn kop zetten.
+                </p>
+            </div>
+        </section>
+
+        <!-- Over de Tak (Asymmetric Bento) -->
+        <section class="py-24 bg-surface">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
+                    <div class="md:col-span-7 bg-surface-container-low p-12 rounded-3xl flex flex-col justify-center">
+                        <h2 class="text-3xl font-headline font-bold text-secondary mb-6 italic">De wildste dromen worden hier werkelijkheid.</h2>
+                        <div class="space-y-4 text-on-surface-variant leading-relaxed">
+                            <p>Bij de Kapoenen (eerste en tweede leerjaar) draait alles om spel en fantasie. In hun eigen leefwereld verkennen ze op een ongedwongen manier de omgeving van onze lokalen en de nabijgelegen bossen.</p>
+                            <p>Het is een tijd van eerste vriendschappen, vuile knieën en onvergetelijke momenten tijdens de zondagse vergaderingen. Hier leggen we de basis voor een leven vol scouting-plezier.</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-5 relative min-h-[400px]">
+                        <img class="absolute inset-0 w-full h-full object-cover rounded-3xl" alt="Kinderhanden samen in een cirkel in scoutsuniform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhdVbMdnIbd_fb-nE9y_Fu-WqhVVum4N1HahzrbyJgkPTsU9bHf6z_pZJ7Uu11zmGOGwJzgJoG67xhcga_YG6oORfHD8HUf5_pap5C37qqUiOvQymogUKj54FkaJB6836JLlcfnRYJB-wpCZcfNWIJBIFcvFx4OLkD1zf4yJVTXbr-nQMM0uUl_qsPZw2vgpqbSfQ0XVGeqWSaO2m764sUryDVVTl7htH6nF1gENFF0iYOUjyXh_0QNYZwaxHNWcrdj550kvppOOg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leiding Section -->
+        <section class="py-24 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="mb-16 flex justify-between items-end">
+                    <div>
+                        <h2 class="text-4xl font-headline font-bold text-primary tracking-tight">Onze Leiding</h2>
+                        <p class="text-on-surface-variant mt-2">Het enthousiaste team dat de Kapoenen begeleidt.</p>
+                    </div>
+                    <div class="hidden md:flex gap-4">
+                        <button class="p-3 rounded-full bg-surface text-primary border-none shadow-sm hover:scale-95 transition-transform">
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </button>
+                        <button class="p-3 rounded-full bg-primary text-on-primary border-none shadow-sm hover:scale-95 transition-transform">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Leiding 1 -->
+                    <div class="group">
+                        <div class="aspect-[4/5] rounded-2xl overflow-hidden mb-4 relative">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Portret van een jonge man in een groen scoutshemd" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD39Ed4AH-MOILT3WOC4QtNZmIrFsB9Lp_60xVkk5VRPXJhCQRi_ryc9KH-hyQogcT4RJu1g6zlQbk-b1xMy1wcS52t7hc51hkah1ctLThsT9EbUTnqO0lo_6tCeYmLYT6GPnW1_nsBT91euB_O5IM3PfSQ9j_c95JBfPSAXRo9loGIFoBsu2okH6vzy6eBBiVKGwdX-bS-Fwmu5HxJw8oTK3Ksyy4gSvUuDEltM4v-FWDFog5VabgEM33JhiXPF4lyOOso1chK7tg" />
+                            <div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-sm p-4 rounded-xl">
+                                <h3 class="font-headline font-bold text-primary">Toon (Kapoen-totem)</h3>
+                                <p class="text-xs font-label text-secondary font-bold uppercase tracking-widest mt-1">Takverantwoordelijke</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Leiding 2 -->
+                    <div class="group">
+                        <div class="aspect-[4/5] rounded-2xl overflow-hidden mb-4 relative">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Jonge vrouw met gevlochten haar in scoutsuniform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBptyiuyGgrmYL2FMz9Op5cvcl0N4v9KEv3J17LgDjTWDs3aEtwrKzKMACw22TEJUr0mzPXF_q35izeTdG-JxzVUmejgxJN_geC6N3Gi4bVWOkBYnAAcLAa0sPNGCcDHZeIPhlZnV2HcuVKYMtx67IbkpLDT52Gyu8fYlUnJd_3ih1RHUyz7EuXBssr_tJ1sb7ovWXnZAFqSI1eMgNvY2F_UT_oHNTw5fLmymvglDCoVR3NWcfctfCh52xj6KIE6AJPVSd60yc7EzU" />
+                            <div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-sm p-4 rounded-xl">
+                                <h3 class="font-headline font-bold text-primary">Margo</h3>
+                                <p class="text-xs font-label text-secondary font-bold uppercase tracking-widest mt-1">Leiding</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Leiding 3 -->
+                    <div class="group">
+                        <div class="aspect-[4/5] rounded-2xl overflow-hidden mb-4 relative">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Jonge man lachend in natuurlijk zonlicht" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfBDHNvVmizuo46OeuctDbFdKXGfzev4iIR3SCFUhEi5WGqxjeCq6eG6tHI3ia8LRnhil92c0F8iXa7OFb7orUEJjh6TqVBNUtisl__3ACkvW6QVCmZrVLolTwszdMsOyFseJ8MtxXzs1lH33keF5Fi8Drx_QFustdGt--paVRf6QdVWnIa2n2kUAjgGmqk8y48hph4-QMtBYpKC-wTgjav5QQjSFkSuk3MfXxhO3wJeiMgqq_t8lgUEtFZnjz6VodcRJpsLZZjyo" />
+                            <div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-sm p-4 rounded-xl">
+                                <h3 class="font-headline font-bold text-primary">Wout</h3>
+                                <p class="text-xs font-label text-secondary font-bold uppercase tracking-widest mt-1">Leiding</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Leiding 4 -->
+                    <div class="group">
+                        <div class="aspect-[4/5] rounded-2xl overflow-hidden mb-4 relative">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Portret van een jonge vrouw in een park" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhN5UXsvQsLYswSGgdKkn0Vg-ekur8cv3rSOS2_o5xCoXs8pzYiqxCB1wCyjUmMY3jH4m3yPgLvKjc_IYuDGjcQzDPIHSBr-i4tjOsMKW86YAIVDch7OBv1IFOXAxUHAX_26Dwu5jtCRM7BHW2rXHCdMa1AsqdW8qkgyes_YgKb_ED-sIZWW7KMYkDmQ8w0z-6POmGH01iokTqKl7F2rf-BgDJsy0nMkM80Z77S6ceir8uTlW7ByLUdmQlv8kOI6S0XcAJru4FWcE" />
+                            <div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-sm p-4 rounded-xl">
+                                <h3 class="font-headline font-bold text-primary">Lise</h3>
+                                <p class="text-xs font-label text-secondary font-bold uppercase tracking-widest mt-1">Leiding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Janneman / Kalender -->
+        <section class="py-24 bg-surface">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-headline font-bold text-primary mb-4">De Janneman</h2>
+                    <p class="text-on-surface-variant font-medium uppercase tracking-widest text-sm">Kalender voor de Kapoenen</p>
+                </div>
+                <div class="space-y-6">
+                    <!-- Event 1 -->
+                    <div class="bg-surface-container-low rounded-2xl p-6 flex flex-col md:flex-row gap-6 items-center transition-all hover:bg-surface-container">
+                        <div class="flex flex-col items-center justify-center bg-primary text-on-primary w-20 h-20 rounded-xl flex-shrink-0">
+                            <span class="text-2xl font-bold font-headline">12</span>
+                            <span class="text-[10px] uppercase font-bold tracking-widest">Mei</span>
+                        </div>
+                        <div class="flex-grow text-center md:text-left">
+                            <h4 class="text-xl font-headline font-bold text-on-surface mb-1">Gewone Vergadering: Bosspelen</h4>
+                            <p class="text-on-surface-variant text-sm">We verzamelen aan de lokalen voor een middag vol plezier in het bos. Doe stevige schoenen aan!</p>
+                        </div>
+                        <div class="flex-shrink-0 flex items-center gap-2 text-secondary font-bold text-sm">
+                            <span class="material-symbols-outlined">schedule</span>
+                            14:00 - 17:00
+                        </div>
+                    </div>
+                    <!-- Event 2 -->
+                    <div class="bg-surface-container-low rounded-2xl p-6 flex flex-col md:flex-row gap-6 items-center transition-all hover:bg-surface-container">
+                        <div class="flex flex-col items-center justify-center bg-primary text-on-primary w-20 h-20 rounded-xl flex-shrink-0">
+                            <span class="text-2xl font-bold font-headline">19</span>
+                            <span class="text-[10px] uppercase font-bold tracking-widest">Mei</span>
+                        </div>
+                        <div class="flex-grow text-center md:text-left">
+                            <h4 class="text-xl font-headline font-bold text-on-surface mb-1">Knutselzondag: De Grote Verffabriek</h4>
+                            <p class="text-on-surface-variant text-sm">Trek kleren aan die vuil mogen worden. We gaan onze eigen vlaggen maken!</p>
+                        </div>
+                        <div class="flex-shrink-0 flex items-center gap-2 text-secondary font-bold text-sm">
+                            <span class="material-symbols-outlined">schedule</span>
+                            14:00 - 17:00
+                        </div>
+                    </div>
+                    <!-- Event 3 -->
+                    <div class="bg-surface-container-low rounded-2xl p-6 flex flex-col md:flex-row gap-6 items-center border-l-4 border-secondary transition-all hover:bg-surface-container">
+                        <div class="flex flex-col items-center justify-center bg-secondary text-on-secondary w-20 h-20 rounded-xl flex-shrink-0">
+                            <span class="text-2xl font-bold font-headline">26</span>
+                            <span class="text-[10px] uppercase font-bold tracking-widest">Mei</span>
+                        </div>
+                        <div class="flex-grow text-center md:text-left">
+                            <h4 class="text-xl font-headline font-bold text-on-surface mb-1">Daguitstap naar het Speelbos</h4>
+                            <p class="text-on-surface-variant text-sm">Check de infomail voor meer details over lunch en vertrekuren.</p>
+                        </div>
+                        <div class="flex-shrink-0 flex items-center gap-2 text-secondary font-bold text-sm">
+                            <span class="material-symbols-outlined">event_note</span>
+                            Hele dag
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <button class="text-primary font-headline font-bold flex items-center gap-2 mx-auto hover:gap-4 transition-all">
+                        Bekijk de volledige kalender
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-surface px-6">
+            <div class="max-w-7xl mx-auto adventure-gradient rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-primary mb-6">Zin om mee op ontdekking te gaan?</h2>
+                    <p class="text-on-primary-container max-w-2xl mx-auto text-lg mb-10">Schrijf je kind vandaag nog in of kom eens proberen tijdens een van onze vergaderingen.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a class="bg-white text-primary px-8 py-4 rounded-full font-headline font-extrabold shadow-lg hover:bg-surface-container transition-colors" href="#">Schrijf nu in</a>
+                        <a class="bg-transparent border-2 border-white/30 text-white px-8 py-4 rounded-full font-headline font-extrabold hover:bg-white/10 transition-colors" href="#">Contacteer de leiding</a>
+                    </div>
+                </div>
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary/20 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#5a2e00] dark:bg-stone-950 w-full mt-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto">
+            <div class="mb-8 md:mb-0">
+                <div class="text-lg font-bold text-white font-headline mb-2">Scouts Vremde</div>
+                <p class="text-[#ffb273]/80 font-label text-sm uppercase tracking-widest">&copy; <script>document.write(new Date().getFullYear())</script> Scouts en Gidsen Vremde - Een digitale expeditie</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8">
+                <a class="text-[#ffb273]/80 hover:text-white font-label text-sm uppercase tracking-widest transition-opacity" href="#">Privacybeleid</a>
+                <a class="text-[#ffb273]/80 hover:text-white font-label text-sm uppercase tracking-widest transition-opacity" href="#">Lidmaatschap</a>
+                <a class="text-[#ffb273]/80 hover:text-white font-label text-sm uppercase tracking-widest transition-opacity" href="#">Leiding portaal</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

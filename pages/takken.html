@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Takken - Scouts Vremde</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="../js/tailwind.config.js"></script>
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+<body class="bg-background text-on-background font-body">
+
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 bg-[#fdf9ef]/80 dark:bg-[#1c1c16]/80 backdrop-blur-md">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+            <div class="text-2xl font-bold text-[#5a2e00] dark:text-stone-200 font-headline">Scouts Vremde</div>
+            <nav class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+                <a class="text-[#5a2e00]/70 dark:text-stone-400 hover:text-[#3b6934] transition-colors" href="../index.html">Home</a>
+                <a class="text-[#3b6934] dark:text-emerald-400 border-b-2 border-[#3b6934] pb-1" href="takken.html">Takken</a>
+                <a class="text-[#5a2e00]/70 dark:text-stone-400 hover:text-[#3b6934] transition-colors" href="kalender.html">Kalender</a>
+                <a class="text-[#5a2e00]/70 dark:text-stone-400 hover:text-[#3b6934] transition-colors" href="contact.html">Contact</a>
+            </nav>
+            <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-headline font-bold transition-all duration-200 ease-in-out scale-95 hover:scale-100 active:scale-90 shadow-sm bg-gradient-to-r from-primary to-primary-container">
+                Word Lid
+            </button>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 bg-mesh min-h-screen">
+        <div class="max-w-7xl mx-auto px-8">
+            <!-- Hero Section -->
+            <header class="mb-16 relative">
+                <span class="bg-secondary-fixed text-on-secondary-fixed-variant px-3 py-1 rounded-md text-xs font-bold uppercase tracking-widest mb-4 inline-block">Onze Groepen</span>
+                <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary tracking-tight mb-6 max-w-3xl">
+                    Kies jouw eigen <span class="text-secondary">avontuur.</span>
+                </h1>
+                <p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                    Bij Scouts Vremde verdelen we onze leden in groepen op basis van leeftijd en geslacht. Zo bieden we activiteiten aan die perfect passen bij de leefwereld van elk kind en elke jongere.
+                </p>
+                <div class="absolute -top-10 -right-20 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+            </header>
+
+            <!-- Grid of Takken -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Kapoenen -->
+                <a class="tak-card group bg-surface-container-low rounded-2xl overflow-hidden flex flex-col transition-all duration-300 border border-transparent hover:border-primary/20 hover:shadow-2xl" href="tak-kapoenen.html">
+                    <div class="h-48 relative overflow-hidden">
+                        <img alt="Kapoenen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpuqRqy9Zjij_YNemuBQr0v9utz_SK6668AGSO5s7YFeHWaNUL7F8CnPPtzsdMYG3yoxyD2lo2X_x1LwJwVLJGxKuLRHsHU6WAT-qSu-VZLCtI7UJWppFi7x5ubW-IK_1mf5g0kHVdv5umuJAksa-yqz_q7eyDkTCQZB38d2yc-EOfss8BpNLoAGotRlxA-JsYtiN19sZzL2loGL7Mc8uGuGY4VdpfHJ8YouTN4YMVO2HAFErpYl5iyivVvA5kro1VdWXeZhsxPIQ" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center gap-2 mb-2 text-xs font-bold text-secondary uppercase tracking-widest">
+                            <span class="material-symbols-outlined text-[16px]">child_care</span>
+                            6 - 8 Jaar &bull; Gemengd
+                        </div>
+                        <h2 class="text-2xl font-headline font-extrabold text-primary mb-3">Kapoenen</h2>
+                        <p class="text-on-surface-variant text-sm mb-6 flex-grow">Scouting is voor de allerkleinsten een groot spel. Ontdekken, samenwerken en plezier.</p>
+                        <div class="flex items-center text-primary font-bold text-sm gap-1 group-hover:translate-x-1 transition-transform">
+                            Lees meer <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Welpen -->
+                <a class="tak-card group bg-surface-container-low rounded-2xl overflow-hidden flex flex-col transition-all duration-300 border border-transparent hover:border-primary/20 hover:shadow-2xl" href="#">
+                    <div class="h-48 relative overflow-hidden">
+                        <img alt="Welpen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8CuBTagGNogbu7UquDqhn0rNm-KiTSJEhvz9mvcKH20UncJz4tSlUp3v5XKA9SlfGIjqRWk2mgBV_h4obwlNUhbUoTIQUUMCO5cq0c4aXyKXJ2VCUx8lPpqjI_HdlqHqhPfmzuydapKqcbiP8xZ5k6xs4Qlz4f5Mk2SUf8IJ8kMdIUOpPkgZRYKb8tknLvrWI3Dmh8rP21cBhiMKB1WM8GfLMDOGBlmKX5xprUyjUT7FxCQKx0d7d7x_ziiityD275s9VFns8KPY" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center gap-2 mb-2 text-xs font-bold text-secondary uppercase tracking-widest">
+                            <span class="material-symbols-outlined text-[16px]">forest</span>
+                            8 - 11 Jaar &bull; Jongens
+                        </div>
+                        <h2 class="text-2xl font-headline font-extrabold text-primary mb-3">Welpen</h2>
+                        <p class="text-on-surface-variant text-sm mb-6 flex-grow">Echte scoutingtechnieken leren verpakt in spannende thema-middagen voor stoere jongens.</p>
+                        <div class="flex items-center text-primary font-bold text-sm gap-1 group-hover:translate-x-1 transition-transform">
+                            Lees meer <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Kabouters -->
+                <a class="tak-card group bg-surface-container-low rounded-2xl overflow-hidden flex flex-col transition-all duration-300 border border-transparent hover:border-primary/20 hover:shadow-2xl" href="#">
+                    <div class="h-48 relative overflow-hidden">
+                        <img alt="Kabouters" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFDXvVoc6sdJhFYUDSJcRfbTGmoXYGd9QfCCR6_cmAmkNv3kAD54CYy5xHsT89EsjvwIpBWjm5L2TnEgGSIjRENTr2kGRsOzIuWC6FIwzaOzaB_8FjkY0HHsr8GtpzpzVGn5i_k5x-Qfy4cLfSaJYiuYbx98s1wJfw-yjc5jeuyUvGqPdVZkxxY24A6_15ZQl3Uy9MWMqE6f0Qn-LZy50lvDAYuXxV8luIeYasq6jZ-GpdEcIHi_krcFMDcrbbGdweDzBzucCVFLo" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center gap-2 mb-2 text-xs font-bold text-secondary uppercase tracking-widest">
+                            <span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+                            8 - 11 Jaar &bull; Meisjes
+                        </div>
+                        <h2 class="text-2xl font-headline font-extrabold text-primary mb-3">Kabouters</h2>
+                        <p class="text-on-surface-variant text-sm mb-6 flex-grow">Magische avonturen voor meisjes. Spelletjes, knutselen en bosbeleving staan centraal.</p>
+                        <div class="flex items-center text-primary font-bold text-sm gap-1 group-hover:translate-x-1 transition-transform">
+                            Lees meer <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Jong-Verkenners -->
+                <a class="tak-card group bg-surface-container-low rounded-2xl overflow-hidden flex flex-col transition-all duration-300 border border-transparent hover:border-primary/20 hover:shadow-2xl" href="#">
+                    <div class="h-48 relative overflow-hidden">
+                        <img alt="Jong-Verkenners" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHRFNNL8Qrw8Q3K3xm_ft6wqV1jNpot0J6_CLkqSTvly4zJ5UznpMGyNk9g0C3fsR0eMmPCFVV46xPyPUcJpqBdOB6tLO9sWNxyNfmOTfahYHxghIF_GloAvAxSggecMqaQ5UW46dOE0gwJ06slrFnl6pfcj1xLoTl9hozQWbpeyhhzql5-h6xKy-wFSEHGZgy-870Pw_83NdPF0J9jxarV-giTnwctWIwW08BYo8V2cGPxl5HMK3E7ypWXtcJH94qEVYU_0_VcB4" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center gap-2 mb-2 text-xs font-bold text-secondary uppercase tracking-widest">
+                            <span class="material-symbols-outlined text-[16px]">explore</span>
+                            11 - 14 Jaar &bull; Jongens
+                        </div>
+                        <h2 class="text-2xl font-headline font-extrabold text-primary mb-3">Jong-Verkenners</h2>
+                        <p class="text-on-surface-variant text-sm mb-6 flex-grow">Fysieke uitdagingen, tweedaagses en koken op houtvuur voor avontuurlijke jongens.</p>
+                        <div class="flex items-center text-primary font-bold text-sm gap-1 group-hover:translate-x-1 transition-transform">
+                            Lees meer <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Jong-Gidsen -->
+                <a class="tak-card group bg-surface-container-low rounded-2xl overflow-hidden flex flex-col transition-all duration-300 border border-transparent hover:border-primary/20 hover:shadow-2xl" href="#">
+                    <div class="h-48 relative overflow-hidden">
+                        <img alt="Jong-Gidsen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsNb74lK4PMi2SLWzp9nIQS6rsjOtf3wZEOOmpikoBu2XsUtMaWE9Y8FLWknLqyCr3ez6ETy-oWcbUeRVDWRIrsXMfAKI2FVJ7XnjbS2172BMCq8qxA2ij4vuezv_bOWpVgfLojwdAUHz2rcR8u8MfbEBdN2DorWyz8kfDhgh3RQHa4lFrUTHXC0v-5Tvgz7UToKL2otF2j9jbyUafAkUNE71jNBFH0u1253K2LaaIV9CdU1D6nEbkO3bNWrY9f3KQTudKbm6NcQg" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center gap-2 mb-2 text-xs font-bold text-secondary uppercase tracking-widest">
+                            <span class="material-symbols-outlined text-[16px]">hiking</span>
+                            11 - 14 Jaar &bull; Meisjes
+                        </div>
+                        <h2 class="text-2xl font-headline font-extrabold text-primary mb-3">Jong-Gidsen</h2>
+                        <p class="text-on-surface-variant text-sm mb-6 flex-grow">Hechte vriendschappen smeden door samen grenzen te verleggen in de natuur.</p>
+                        <div class="flex items-center text-primary font-bold text-sm gap-1 group-hover:translate-x-1 transition-transform">
+                            Lees meer <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Verkenners -->
+                <a class="tak-card group bg-surface-container-low rounded-2xl overflow-hidden flex flex-col transition-all duration-300 border border-transparent hover:border-primary/20 hover:shadow-2xl" href="#">
+                    <div class="h-48 relative overflow-hidden">
+                        <img alt="Verkenners" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbP5XqCZ5iL1sMtt_9JMeNSWMoEsVoENOZG9CfR1DEdhBEUZaVVFAo_70_WaK0Z80HSkCAVGwuVj4XBVxThC3j20tfmXdLIEwDdsn7O-EhYyBqGhoUAm9ox6YDZ0xVvrNY-mxSNqon-Xx6Td6cpaCzzOzx2JcMlGflCmvkFDVb_zcnoB2zS2Y9w2B5zpSq_frKohE-EOG6zmGTwKLJNXsQaJ11ug2BTF6a5UYxNX6nWfR8dTArEVTrxnXiCeslnwFBihDzgyMkdLs" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center gap-2 mb-2 text-xs font-bold text-secondary uppercase tracking-widest">
+                            <span class="material-symbols-outlined text-[16px]">landscape</span>
+                            14 - 17 Jaar &bull; Jongens
+                        </div>
+                        <h2 class="text-2xl font-headline font-extrabold text-primary mb-3">Verkenners</h2>
+                        <p class="text-on-surface-variant text-sm mb-6 flex-grow">Zelfstandigheid en grote projecten. Verkenners plannen hun eigen kamp en expedities.</p>
+                        <div class="flex items-center text-primary font-bold text-sm gap-1 group-hover:translate-x-1 transition-transform">
+                            Lees meer <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Gidsen -->
+                <a class="tak-card group bg-surface-container-low rounded-2xl overflow-hidden flex flex-col transition-all duration-300 border border-transparent hover:border-primary/20 hover:shadow-2xl" href="#">
+                    <div class="h-48 relative overflow-hidden">
+                        <img alt="Gidsen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjwm38DejV8CrcZ5Tfioh_kShJAmChDn2dsjtmtA11CLk4JRJNkef_hZkYrdTfflmlSsZRjUEA1H8-fOdYHHHP-ghtDCZ4qu2uJEmSYgLyvSAPc_ZRiaD_0KaVZZ_oKpVjaSkR0VH6mFpMArn5aMR252OBnARq0L4OWfvxMtKugbwft1eIfF3e2U798Dp8nbQDdFpvW2Qu11iZD7gY4yAGWo9axAQjHb7UvcvXc34eItL9ge7c_-54I2OEArEviD-yrHhX_GkKwns" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center gap-2 mb-2 text-xs font-bold text-secondary uppercase tracking-widest">
+                            <span class="material-symbols-outlined text-[16px]">volunteer_activism</span>
+                            14 - 17 Jaar &bull; Meisjes
+                        </div>
+                        <h2 class="text-2xl font-headline font-extrabold text-primary mb-3">Gidsen</h2>
+                        <p class="text-on-surface-variant text-sm mb-6 flex-grow">Maatschappelijk engagement en vriendschap. Een groep die haar eigen koers vaart.</p>
+                        <div class="flex items-center text-primary font-bold text-sm gap-1 group-hover:translate-x-1 transition-transform">
+                            Lees meer <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Jins -->
+                <a class="tak-card group bg-primary rounded-2xl overflow-hidden flex flex-col transition-all duration-300 border border-transparent hover:shadow-2xl relative min-h-[300px]" href="#">
+                    <img alt="Jins" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPVnH3WAkWXycwPND58lTadQHYl2KOaHXdNxZ7EKGRuK7nO-n6T1kLkUDgZrXOgXtmkn0wR-q4Vq0UzY557ssfZARrauuE24q7aqSKh-q8kZ9e_fuIQzkXGU43vT3t-GommEwtJobSolgdYxk_xwCKvkX3uOggNjCQIEZY6DPEDAU41Wf2iDAiU_imABf63TICzgVsAAIDcEC5b_YbPbZGQGEybKabrgKim6hLqIEydhRcaF75-ekYGt5E9HlO9xWBVICcB_ZoI4s" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
+                    <div class="relative z-10 p-6 mt-auto">
+                        <div class="flex items-center gap-2 mb-2 text-xs font-bold text-primary-fixed uppercase tracking-widest">
+                            <span class="material-symbols-outlined text-[16px]">flight_takeoff</span>
+                            17 - 18 Jaar &bull; Gemengd
+                        </div>
+                        <h2 class="text-2xl font-headline font-extrabold text-white mb-2">Jins</h2>
+                        <p class="text-white/80 text-sm mb-4">Het laatste jaar. Samen werken voor een droomreis en voorbereiden op leiding worden.</p>
+                        <div class="inline-flex items-center bg-white text-primary px-4 py-2 rounded-full font-bold text-xs gap-1 group-hover:bg-primary-fixed transition-colors">
+                            Ontdek Jins <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full mt-auto bg-[#5a2e00] dark:bg-stone-950">
+        <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto">
+            <div class="text-lg font-bold text-white font-body mb-6 md:mb-0">Scouts Vremde</div>
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <nav class="flex gap-6 text-[#ffb273]/80 font-body text-sm uppercase tracking-widest">
+                    <a class="hover:text-white transition-opacity" href="#">Privacybeleid</a>
+                    <a class="hover:text-white transition-opacity" href="#">Lidmaatschap</a>
+                    <a class="hover:text-white transition-opacity" href="#">Leiding portaal</a>
+                </nav>
+                <p class="text-[#ffb273]/60 text-xs font-body uppercase tracking-widest">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Scouts en Gidsen Vremde - Een digitale expeditie
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
