@@ -13,20 +13,17 @@
 <body class="bg-background text-on-background font-body">
 
     <!-- TopNavBar -->
-    <header class="fixed top-0 w-full z-50 bg-[#fdf9ef]/80 dark:bg-[#1c1c16]/80 backdrop-blur-md">
-        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
-            <div class="text-2xl font-bold text-[#5a2e00] dark:text-stone-200 font-headline">Scouts Vremde</div>
-            <nav class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
-                <a class="text-[#5a2e00]/70 dark:text-stone-400 hover:text-[#3b6934] transition-colors" href="../index.html">Home</a>
-                <a class="text-[#3b6934] dark:text-emerald-400 border-b-2 border-[#3b6934] pb-1" href="takken.html">Takken</a>
-                <a class="text-[#5a2e00]/70 dark:text-stone-400 hover:text-[#3b6934] transition-colors" href="kalender.html">Kalender</a>
-                <a class="text-[#5a2e00]/70 dark:text-stone-400 hover:text-[#3b6934] transition-colors" href="contact.html">Contact</a>
-            </nav>
-            <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-headline font-bold transition-all duration-200 ease-in-out scale-95 hover:scale-100 active:scale-90 shadow-sm bg-gradient-to-r from-primary to-primary-container">
-                Word Lid
-            </button>
+    <nav class="fixed top-0 w-full z-50 bg-[#fdf9ef]/80 backdrop-blur-md">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-16">
+            <a href="../index.html" class="text-2xl font-extrabold text-[#5a2e00] font-headline tracking-tight">Scouts Vremde</a>
+            <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+                <a class="text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="../index.html">Home</a>
+                <a class="text-[#3b6934] border-b-2 border-[#3b6934] pb-1" href="takken.html">Takken</a>
+                <a class="text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="janneman.html">Janneman</a>
+                <a class="text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="contact.html">Contact</a>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <main class="pt-32 pb-20 bg-mesh min-h-screen">
         <div class="max-w-7xl mx-auto px-8">
@@ -34,10 +31,10 @@
             <header class="mb-16 relative">
                 <span class="bg-secondary-fixed text-on-secondary-fixed-variant px-3 py-1 rounded-md text-xs font-bold uppercase tracking-widest mb-4 inline-block">Onze Groepen</span>
                 <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary tracking-tight mb-6 max-w-3xl">
-                    Kies jouw eigen <span class="text-secondary">avontuur.</span>
+                    Kies je <span class="text-secondary">tak.</span>
                 </h1>
                 <p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed">
-                    Bij Scouts Vremde verdelen we onze leden in groepen op basis van leeftijd en geslacht. Zo bieden we activiteiten aan die perfect passen bij de leefwereld van elk kind en elke jongere.
+                    Bij Scouts Vremde verdelen we onze leden in groepen op basis van leeftijd en geslacht. Zo bieden we activiteiten aan die perfect passen bij de leefwereld van elk kind.
                 </p>
                 <div class="absolute -top-10 -right-20 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
             </header>
@@ -191,19 +188,31 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full mt-auto bg-[#5a2e00] dark:bg-stone-950">
-        <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto">
-            <div class="text-lg font-bold text-white font-body mb-6 md:mb-0">Scouts Vremde</div>
-            <div class="flex flex-col md:flex-row gap-8 items-center">
-                <nav class="flex gap-6 text-[#ffb273]/80 font-body text-sm uppercase tracking-widest">
-                    <a class="hover:text-white transition-opacity" href="#">Privacybeleid</a>
-                    <a class="hover:text-white transition-opacity" href="#">Lidmaatschap</a>
-                    <a class="hover:text-white transition-opacity" href="#">Leiding portaal</a>
-                </nav>
-                <p class="text-[#ffb273]/60 text-xs font-body uppercase tracking-widest">
-                    &copy; <script>document.write(new Date().getFullYear())</script> Scouts en Gidsen Vremde - Een digitale expeditie
-                </p>
+    <footer class="w-full bg-[#5a2e00] text-[#fdf9ef] font-body text-sm mt-20">
+        <div class="max-w-7xl mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-start gap-10">
+            <div>
+                <div class="text-lg font-bold text-[#ffb273] mb-1">Scouts Vremde</div>
+                <p class="text-[#ffb273]/60 text-xs">Scouts &amp; Gidsen Sint-Jan in d'Olie Vremde</p>
             </div>
+            <div class="flex flex-wrap gap-12">
+                <div class="flex flex-col gap-3">
+                    <span class="font-bold text-[#ffb273] uppercase tracking-widest text-xs">Navigatie</span>
+                    <a class="opacity-80 hover:opacity-100 transition-opacity" href="takken.html">Takken</a>
+                    <a class="opacity-80 hover:opacity-100 transition-opacity" href="janneman.html">Janneman</a>
+                    <a class="opacity-80 hover:opacity-100 transition-opacity" href="contact.html">Contact</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="font-bold text-[#ffb273] uppercase tracking-widest text-xs">Volg ons</span>
+                    <a class="opacity-80 hover:opacity-100 transition-opacity" href="https://www.facebook.com/groups/783501543832521/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="font-bold text-[#ffb273] uppercase tracking-widest text-xs">Locatie</span>
+                    <a class="opacity-80 hover:opacity-100 transition-opacity" href="contact.html#lokalen">Broechemsesteenweg 100, 2531 Boechout</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-8 pb-8">
+            <p class="text-[#ffb273]/40 text-xs">&copy; <script>document.write(new Date().getFullYear())</script> Scouts &amp; Gidsen Sint-Jan in d'Olie Vremde</p>
         </div>
     </footer>
 

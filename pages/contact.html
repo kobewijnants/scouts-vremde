@@ -13,17 +13,16 @@
 <body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
 
     <!-- TopNavBar -->
-    <nav class="fixed top-0 w-full flex justify-between items-center px-8 py-4 max-w-none bg-[#fdf9ef]/80 backdrop-blur-md z-50">
-        <div class="text-2xl font-extrabold text-[#5a2e00] font-headline tracking-tight">Scouts Vremde</div>
-        <div class="hidden md:flex items-center gap-8">
-            <a class="text-[#1c1c16] opacity-80 font-headline font-bold tracking-tight hover:text-[#5a2e00] transition-colors duration-200" href="../index.html">Home</a>
-            <a class="text-[#1c1c16] opacity-80 font-headline font-bold tracking-tight hover:text-[#5a2e00] transition-colors duration-200" href="takken.html">Takken</a>
-            <a class="text-[#1c1c16] opacity-80 font-headline font-bold tracking-tight hover:text-[#5a2e00] transition-colors duration-200" href="kalender.html">Kalender</a>
-            <a class="text-[#3b6934] border-b-2 border-[#3b6934] pb-1 font-headline font-bold tracking-tight" href="contact.html">Contact</a>
+    <nav class="fixed top-0 w-full z-50 bg-[#fdf9ef]/80 backdrop-blur-md">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-16">
+            <a href="../index.html" class="text-2xl font-extrabold text-[#5a2e00] font-headline tracking-tight">Scouts Vremde</a>
+            <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+                <a class="text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="../index.html">Home</a>
+                <a class="text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="takken.html">Takken</a>
+                <a class="text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="janneman.html">Janneman</a>
+                <a class="text-[#3b6934] border-b-2 border-[#3b6934] pb-1" href="contact.html">Contact</a>
+            </div>
         </div>
-        <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-headline font-bold transition-transform scale-95 active:scale-90 bg-gradient-to-br from-primary to-primary-container">
-            Inschrijven
-        </button>
     </nav>
 
     <main class="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
@@ -39,71 +38,69 @@
 
         <!-- Bento Layout for Content -->
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
-            <!-- Contact Form Section -->
-            <section class="md:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-xl flex flex-col gap-8">
-                <div>
-                    <h2 class="text-3xl font-headline font-bold text-primary mb-2">Stuur ons een bericht</h2>
-                    <p class="text-on-surface-variant">We proberen binnen de 48 uur te antwoorden.</p>
-                </div>
-                <form class="flex flex-col gap-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm font-bold text-secondary px-1">Naam</label>
-                            <input class="bg-surface-container-highest border-outline-variant/15 rounded-lg p-4 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="Jouw naam" type="text" />
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm font-bold text-secondary px-1">E-mailadres</label>
-                            <input class="bg-surface-container-highest border-outline-variant/15 rounded-lg p-4 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" placeholder="naam@voorbeeld.be" type="email" />
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <label class="text-sm font-bold text-secondary px-1">Bericht</label>
-                        <textarea class="bg-surface-container-highest border-outline-variant/15 rounded-lg p-4 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all resize-none" placeholder="Waarmee kunnen we je helpen?" rows="5"></textarea>
-                    </div>
-                    <button class="bg-primary text-on-primary w-full md:w-fit px-10 py-4 rounded-full font-headline font-extrabold hover:shadow-lg transition-all flex items-center justify-center gap-2" type="submit">
-                        Verzenden
-                        <span class="material-symbols-outlined">send</span>
-                    </button>
-                </form>
-            </section>
-
             <!-- Groepsleiding Info -->
-            <aside class="md:col-span-5 flex flex-col gap-8">
+            <div class="md:col-span-7">
                 <div class="bg-secondary text-on-secondary p-8 rounded-xl relative overflow-hidden">
                     <div class="absolute -right-10 -bottom-10 opacity-10">
                         <span class="material-symbols-outlined text-[160px]">forest</span>
                     </div>
                     <h3 class="text-2xl font-headline font-bold mb-6">Groepsleiding</h3>
-                    <div class="flex flex-col gap-6 relative z-10">
+                    <div class="flex flex-col gap-5 relative z-10">
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container">
-                                <span class="material-symbols-outlined">person</span>
+                            <div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container">
+                                <span class="material-symbols-outlined text-xl">mail</span>
+                            </div>
+                            <a href="mailto:groepsleiding@scoutsvremde.be" class="font-bold hover:underline">groepsleiding@scoutsvremde.be</a>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container">
+                                <span class="material-symbols-outlined text-xl">person</span>
                             </div>
                             <div>
-                                <p class="font-bold">Eline &amp; Thomas</p>
-                                <p class="text-sm opacity-80">Hoofdleiding 2023-2024</p>
+                                <p class="font-bold">Lena</p>
+                                <a href="tel:+32468586214" class="text-sm opacity-80 hover:opacity-100">+32 468 58 62 14</a>
                             </div>
                         </div>
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container">
-                                <span class="material-symbols-outlined">mail</span>
+                            <div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container">
+                                <span class="material-symbols-outlined text-xl">person</span>
                             </div>
-                            <p class="font-bold">groepsleiding@scoutsvremde.be</p>
+                            <div>
+                                <p class="font-bold">Gust</p>
+                                <a href="tel:+32493817068" class="text-sm opacity-80 hover:opacity-100">+32 493 81 70 68</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container">
+                                <span class="material-symbols-outlined text-xl">person</span>
+                            </div>
+                            <div>
+                                <p class="font-bold">Vin</p>
+                                <a href="tel:+32468191041" class="text-sm opacity-80 hover:opacity-100">+32 468 19 10 41</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container">
+                                <span class="material-symbols-outlined text-xl">person</span>
+                            </div>
+                            <div>
+                                <p class="font-bold">Jarne</p>
+                                <a href="tel:+32468283501" class="text-sm opacity-80 hover:opacity-100">+32 468 28 35 01</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container">
+                                <span class="material-symbols-outlined text-xl">person</span>
+                            </div>
+                            <div>
+                                <p class="font-bold">Taro</p>
+                                <a href="tel:+32491233284" class="text-sm opacity-80 hover:opacity-100">+32 491 23 32 84</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Registration Quick Info -->
-                <div class="bg-surface-container-highest p-8 rounded-xl">
-                    <div class="flex items-center gap-2 text-primary mb-4">
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">info</span>
-                        <h4 class="font-headline font-bold uppercase tracking-wider text-sm">Wist je dat?</h4>
-                    </div>
-                    <p class="text-on-surface-variant leading-relaxed">
-                        Nieuwe leden mogen <strong>3 keer gratis</strong> komen proberen vooraleer ze zich officieel moeten inschrijven. Zo kun je rustig ontdekken of de scouts iets voor jou is!
-                    </p>
-                </div>
-            </aside>
+            </div>
         </div>
 
         <!-- Inschrijvingen Section -->
@@ -158,7 +155,7 @@
 
         <!-- Location Section -->
         <section id="lokalen" class="mt-32">
-            <h2 class="text-3xl font-headline font-bold text-primary mb-8 text-center">Onze Basis</h2>
+            <h2 class="text-3xl font-headline font-bold text-primary mb-8 text-center">Onze Lokalen</h2>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
                 <!-- Map -->
                 <div class="md:col-span-8 rounded-3xl overflow-hidden h-[500px] shadow-2xl">
@@ -182,6 +179,7 @@
                     <div class="space-y-6">
                         <div>
                             <p class="font-headline font-bold text-on-surface text-lg mb-1">Scouts Vremde</p>
+                            <p class="text-on-surface-variant text-xs mb-2">Scouts &amp; Gidsen Sint-Jan in d'Olie</p>
                             <p class="text-on-surface-variant text-sm leading-relaxed">Broechemsesteenweg 100,<br />2531 Boechout</p>
                         </div>
                         <a
@@ -200,22 +198,31 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-start gap-8 bg-[#5a2e00] text-[#fdf9ef] mt-20">
-        <div class="flex flex-col gap-4">
-            <div class="text-lg font-bold text-[#ffb273]">Scouts Vremde</div>
-            <p class="font-body text-sm opacity-80 max-w-xs">&copy; <script>document.write(new Date().getFullYear())</script> Scouts Vremde. De Gids naar Avontuur. Een trotse tak van Scouts en Gidsen Vlaanderen.</p>
+    <footer class="w-full bg-[#5a2e00] text-[#fdf9ef] font-body text-sm mt-20">
+        <div class="max-w-7xl mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-start gap-10">
+            <div>
+                <div class="text-lg font-bold text-[#ffb273] mb-1">Scouts Vremde</div>
+                <p class="text-[#ffb273]/60 text-xs">Scouts &amp; Gidsen Sint-Jan in d'Olie Vremde</p>
+            </div>
+            <div class="flex flex-wrap gap-12">
+                <div class="flex flex-col gap-3">
+                    <span class="font-bold text-[#ffb273] uppercase tracking-widest text-xs">Navigatie</span>
+                    <a class="opacity-80 hover:opacity-100 transition-opacity" href="takken.html">Takken</a>
+                    <a class="opacity-80 hover:opacity-100 transition-opacity" href="janneman.html">Janneman</a>
+                    <a class="opacity-80 hover:opacity-100 transition-opacity" href="contact.html">Contact</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="font-bold text-[#ffb273] uppercase tracking-widest text-xs">Volg ons</span>
+                    <a class="opacity-80 hover:opacity-100 transition-opacity" href="https://www.facebook.com/groups/783501543832521/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="font-bold text-[#ffb273] uppercase tracking-widest text-xs">Locatie</span>
+                    <a class="opacity-80 hover:opacity-100 transition-opacity" href="contact.html#lokalen">Broechemsesteenweg 100, 2531 Boechout</a>
+                </div>
+            </div>
         </div>
-        <div class="flex flex-col md:flex-row gap-8 md:gap-16">
-            <div class="flex flex-col gap-3">
-                <span class="font-bold text-[#ffb273]">Volg ons</span>
-                <a class="font-body text-sm opacity-80 hover:opacity-100 underline" href="#">Facebook</a>
-                <a class="font-body text-sm opacity-80 hover:opacity-100 underline" href="#">Instagram</a>
-            </div>
-            <div class="flex flex-col gap-3">
-                <span class="font-bold text-[#ffb273]">Navigatie</span>
-                <a class="font-body text-sm opacity-80 hover:opacity-100 underline" href="#">Privacy Policy</a>
-                <a class="font-body text-sm opacity-80 hover:opacity-100 underline text-[#ffb273]" href="#">Adres &amp; Kaart</a>
-            </div>
+        <div class="max-w-7xl mx-auto px-8 pb-8">
+            <p class="text-[#ffb273]/40 text-xs">&copy; <script>document.write(new Date().getFullYear())</script> Scouts &amp; Gidsen Sint-Jan in d'Olie Vremde</p>
         </div>
     </footer>
 
