@@ -19,7 +19,7 @@
         <div class="max-w-2xl">
             <h1 class="text-5xl md:text-6xl font-extrabold text-primary leading-tight mb-6 font-headline">Janneman</h1>
             <p class="text-lg text-on-surface-variant leading-relaxed">
-                Alle activiteiten en vergaderingen op een rij. Kies je tak om de specifieke kalender te bekijken.
+                Alle activiteiten en vergaderingen op een rij. Bekijk de volledige janneman hieronder.
             </p>
         </div>
     </header>
@@ -122,202 +122,27 @@
             </div>
         </div>
 
-        <!-- Per-Tak Janneman Section -->
+        <!-- Volledige Janneman Section -->
         <div class="pb-20">
             <div class="flex items-center gap-4 mb-8">
-                <h2 class="text-3xl font-bold text-primary font-headline">Janneman per Tak</h2>
+                <h2 class="text-3xl font-bold text-primary font-headline">Volledige Janneman</h2>
                 <div class="h-[2px] flex-grow bg-outline-variant opacity-20"></div>
             </div>
 
-            <!-- Tak Tab Buttons -->
-            <div class="flex gap-3 overflow-x-auto pb-6 no-scrollbar">
-                <button onclick="switchTak('kapoenen')" data-tak="kapoenen" class="tak-tab whitespace-nowrap px-6 py-2 bg-primary text-on-primary rounded-full text-sm font-bold shadow-md">Kapoenen</button>
-                <button onclick="switchTak('welpen')" data-tak="welpen" class="tak-tab whitespace-nowrap px-6 py-2 bg-surface-container-low text-on-surface-variant rounded-full text-sm font-bold hover:bg-surface-container-highest transition-colors">Welpen</button>
-                <button onclick="switchTak('kabouters')" data-tak="kabouters" class="tak-tab whitespace-nowrap px-6 py-2 bg-surface-container-low text-on-surface-variant rounded-full text-sm font-bold hover:bg-surface-container-highest transition-colors">Kabouters</button>
-                <button onclick="switchTak('jong-verkenners')" data-tak="jong-verkenners" class="tak-tab whitespace-nowrap px-6 py-2 bg-surface-container-low text-on-surface-variant rounded-full text-sm font-bold hover:bg-surface-container-highest transition-colors">Jong-Verkenners</button>
-                <button onclick="switchTak('jong-gidsen')" data-tak="jong-gidsen" class="tak-tab whitespace-nowrap px-6 py-2 bg-surface-container-low text-on-surface-variant rounded-full text-sm font-bold hover:bg-surface-container-highest transition-colors">Jong-Gidsen</button>
-                <button onclick="switchTak('verkenners')" data-tak="verkenners" class="tak-tab whitespace-nowrap px-6 py-2 bg-surface-container-low text-on-surface-variant rounded-full text-sm font-bold hover:bg-surface-container-highest transition-colors">Verkenners</button>
-                <button onclick="switchTak('gidsen')" data-tak="gidsen" class="tak-tab whitespace-nowrap px-6 py-2 bg-surface-container-low text-on-surface-variant rounded-full text-sm font-bold hover:bg-surface-container-highest transition-colors">Gidsen</button>
-                <button onclick="switchTak('jins')" data-tak="jins" class="tak-tab whitespace-nowrap px-6 py-2 bg-surface-container-low text-on-surface-variant rounded-full text-sm font-bold hover:bg-surface-container-highest transition-colors">Jins</button>
-            </div>
-
-            <!-- Tak Content Panels -->
-            <div id="tak-content" class="bg-surface-container-low rounded-2xl p-8 md:p-12 min-h-[600px]">
-                <!-- Each tak panel -->
-                <div data-panel="kapoenen" class="tak-panel">
-                    <h3 class="text-2xl font-headline font-bold text-primary mb-6">Kapoenen</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/kapoenen.pdf" class="w-full h-full rounded-xl hidden" id="pdf-kapoenen-1"></iframe>
-                            <div class="placeholder-kapoenen flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 1</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/kapoenen.pdf#page=2" class="w-full h-full rounded-xl hidden" id="pdf-kapoenen-2"></iframe>
-                            <div class="placeholder-kapoenen flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 2</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="bg-surface-container-low rounded-2xl p-8 md:p-12">
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                    <a id="janneman-download" class="cms-editable bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold flex items-center gap-2 hover:shadow-lg transition-all" href="../jannemannen/janneman.pdf" target="_blank">
+                        <span class="material-symbols-outlined">open_in_new</span>
+                        Open de janneman
+                    </a>
+                    <button onclick="togglePdfViewer()" id="toggle-pdf-btn" class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-headline font-bold flex items-center gap-2 hover:bg-surface-container-highest transition-all">
+                        <span class="material-symbols-outlined">visibility</span>
+                        Bekijk hier
+                    </button>
                 </div>
 
-                <div data-panel="welpen" class="tak-panel hidden">
-                    <h3 class="text-2xl font-headline font-bold text-primary mb-6">Welpen</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/welpen.pdf" class="w-full h-full rounded-xl hidden" id="pdf-welpen-1"></iframe>
-                            <div class="placeholder-welpen flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 1</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/welpen.pdf#page=2" class="w-full h-full rounded-xl hidden" id="pdf-welpen-2"></iframe>
-                            <div class="placeholder-welpen flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 2</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-panel="kabouters" class="tak-panel hidden">
-                    <h3 class="text-2xl font-headline font-bold text-primary mb-6">Kabouters</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/kabouters.pdf" class="w-full h-full rounded-xl hidden" id="pdf-kabouters-1"></iframe>
-                            <div class="placeholder-kabouters flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 1</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/kabouters.pdf#page=2" class="w-full h-full rounded-xl hidden" id="pdf-kabouters-2"></iframe>
-                            <div class="placeholder-kabouters flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 2</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-panel="jong-verkenners" class="tak-panel hidden">
-                    <h3 class="text-2xl font-headline font-bold text-primary mb-6">Jong-Verkenners</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/jong-verkenners.pdf" class="w-full h-full rounded-xl hidden" id="pdf-jong-verkenners-1"></iframe>
-                            <div class="placeholder-jong-verkenners flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 1</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/jong-verkenners.pdf#page=2" class="w-full h-full rounded-xl hidden" id="pdf-jong-verkenners-2"></iframe>
-                            <div class="placeholder-jong-verkenners flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 2</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-panel="jong-gidsen" class="tak-panel hidden">
-                    <h3 class="text-2xl font-headline font-bold text-primary mb-6">Jong-Gidsen</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/jong-gidsen.pdf" class="w-full h-full rounded-xl hidden" id="pdf-jong-gidsen-1"></iframe>
-                            <div class="placeholder-jong-gidsen flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 1</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/jong-gidsen.pdf#page=2" class="w-full h-full rounded-xl hidden" id="pdf-jong-gidsen-2"></iframe>
-                            <div class="placeholder-jong-gidsen flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 2</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-panel="verkenners" class="tak-panel hidden">
-                    <h3 class="text-2xl font-headline font-bold text-primary mb-6">Verkenners</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/verkenners.pdf" class="w-full h-full rounded-xl hidden" id="pdf-verkenners-1"></iframe>
-                            <div class="placeholder-verkenners flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 1</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/verkenners.pdf#page=2" class="w-full h-full rounded-xl hidden" id="pdf-verkenners-2"></iframe>
-                            <div class="placeholder-verkenners flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 2</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-panel="gidsen" class="tak-panel hidden">
-                    <h3 class="text-2xl font-headline font-bold text-primary mb-6">Gidsen</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/gidsen.pdf" class="w-full h-full rounded-xl hidden" id="pdf-gidsen-1"></iframe>
-                            <div class="placeholder-gidsen flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 1</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/gidsen.pdf#page=2" class="w-full h-full rounded-xl hidden" id="pdf-gidsen-2"></iframe>
-                            <div class="placeholder-gidsen flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 2</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-panel="jins" class="tak-panel hidden">
-                    <h3 class="text-2xl font-headline font-bold text-primary mb-6">Jins</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/jins.pdf" class="w-full h-full rounded-xl hidden" id="pdf-jins-1"></iframe>
-                            <div class="placeholder-jins flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 1</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                        <div class="bg-surface-container-highest rounded-xl aspect-[210/297] flex items-center justify-center">
-                            <iframe src="../jannemannen/jins.pdf#page=2" class="w-full h-full rounded-xl hidden" id="pdf-jins-2"></iframe>
-                            <div class="placeholder-jins flex flex-col items-center gap-4 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-6xl opacity-30">description</span>
-                                <p class="font-bold">Pagina 2</p>
-                                <p class="text-sm opacity-60">Binnenkort beschikbaar</p>
-                            </div>
-                        </div>
-                    </div>
+                <div id="pdf-viewer" class="hidden">
+                    <iframe id="janneman-iframe" class="w-full rounded-xl bg-surface-container-highest" style="height: 80vh; min-height: 600px;" title="Janneman PDF"></iframe>
                 </div>
             </div>
         </div>
@@ -325,26 +150,24 @@
 
     <div id="footer-placeholder"></div>
 
-    <!-- Tab Switching Script -->
     <script>
-        function switchTak(tak) {
-            // Update tab buttons
-            document.querySelectorAll('.tak-tab').forEach(function(btn) {
-                if (btn.dataset.tak === tak) {
-                    btn.className = 'tak-tab whitespace-nowrap px-6 py-2 bg-primary text-on-primary rounded-full text-sm font-bold shadow-md';
-                } else {
-                    btn.className = 'tak-tab whitespace-nowrap px-6 py-2 bg-surface-container-low text-on-surface-variant rounded-full text-sm font-bold hover:bg-surface-container-highest transition-colors';
-                }
-            });
+        function togglePdfViewer() {
+            var viewer = document.getElementById('pdf-viewer');
+            var iframe = document.getElementById('janneman-iframe');
+            var btn = document.getElementById('toggle-pdf-btn');
+            var link = document.getElementById('janneman-download');
+            var pdfUrl = link.getAttribute('href');
 
-            // Update panels
-            document.querySelectorAll('.tak-panel').forEach(function(panel) {
-                if (panel.dataset.panel === tak) {
-                    panel.classList.remove('hidden');
-                } else {
-                    panel.classList.add('hidden');
-                }
-            });
+            if (viewer.classList.contains('hidden')) {
+                iframe.src = pdfUrl;
+                viewer.classList.remove('hidden');
+                btn.innerHTML = '<span class="material-symbols-outlined">visibility_off</span> Verberg';
+                viewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                viewer.classList.add('hidden');
+                iframe.src = '';
+                btn.innerHTML = '<span class="material-symbols-outlined">visibility</span> Bekijk hier';
+            }
         }
     </script>
 
