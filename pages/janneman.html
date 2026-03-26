@@ -1,176 +1,197 @@
 <!DOCTYPE html>
 <html class="light" lang="nl">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Janneman - Scouts Vremde</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="../js/tailwind.config.js"></script>
-    <link href="../css/styles.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Janneman - Scouts Vremde</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="../js/tailwind.config.js"></script>
+  <link href="../css/styles.css" rel="stylesheet">
+  <meta name="description" content>
+  <meta property="og:title" content="Janneman - Scouts Vremde">
+  <meta property="og:description" content>
+  <meta property="og:image" content>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://scoutsvremde.kobecloud.be/pages/janneman.html">
 </head>
 <body class="bg-background text-on-background antialiased font-body">
 
-    <div id="nav-placeholder"></div>
+  <div id="nav-placeholder"></div>
 
-    <!-- Hero / Header Section -->
-    <header class="pt-32 pb-16 px-8 max-w-7xl mx-auto">
-        <div class="max-w-2xl">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-primary leading-tight mb-6 font-headline">Janneman</h1>
-            <p class="text-lg text-on-surface-variant leading-relaxed">
-                Alle activiteiten en vergaderingen op een rij. Bekijk de volledige janneman hieronder.
-            </p>
+  <!-- Hero / Header Section -->
+  <header class="pt-32 pb-16 px-8 max-w-7xl mx-auto">
+    <div class="max-w-2xl">
+      <h1 class="text-5xl md:text-6xl font-extrabold text-primary leading-tight mb-6 font-headline">Janneman</h1>
+      <p class="text-lg text-on-surface-variant leading-relaxed">
+        Alle activiteiten en vergaderingen op een rij. Bekijk de volledige janneman hieronder.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-8 max-w-7xl mx-auto space-y-20">
+    <!-- Evenementen -->
+    <div>
+      <div class="flex items-center gap-4 mb-8">
+        <h2 class="text-3xl font-bold text-primary font-headline">Evenementen</h2>
+        <div class="h-[2px] flex-grow bg-outline-variant opacity-20"></div>
+      </div>
+      <div id="evenementen-list" class="cms-editable space-y-4">
+        <div
+             class="group grid grid-cols-1 md:grid-cols-12 items-center bg-surface-container-lowest p-6 rounded-xl gap-6 transition-all duration-300 hover:bg-surface-container-low border border-outline-variant/10">
+          <div class="md:col-span-2 flex flex-col"><span
+                  class="text-sm font-bold text-on-surface-variant/60 uppercase">Zaterdag</span> <span
+                  class="text-xl font-extrabold text-primary">25 Apr</span></div>
+          <div class="md:col-span-1 flex justify-center">
+            <div
+                 class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+              <span class="material-symbols-outlined">restaurant</span></div>
+          </div>
+          <div class="md:col-span-9">
+            <h4 class="text-lg font-bold text-on-surface">Spaghettiavond</h4>
+            <span
+                  class="text-xs bg-secondary-container px-2 py-1 rounded text-on-secondary-container font-bold mt-1 inline-block">Iedereen
+              welkom</span>
+          </div>
         </div>
-    </header>
+        <!-- Groepsdag -->
+        <div
+             class="group grid grid-cols-1 md:grid-cols-12 items-center bg-surface-container-lowest p-6 rounded-xl gap-6 transition-all duration-300 hover:bg-surface-container-low border border-outline-variant/10">
+          <div class="md:col-span-2 flex flex-col"><span
+                  class="text-sm font-bold text-on-surface-variant/60 uppercase">Zaterdag</span> <span
+                  class="text-xl font-extrabold text-primary">09 Mei</span></div>
+          <div class="md:col-span-1 flex justify-center">
+            <div
+                 class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+              <span class="material-symbols-outlined">groups</span></div>
+          </div>
+          <div class="md:col-span-9">
+            <h4 class="text-lg font-bold text-on-surface">Groepsdag</h4>
+            <span
+                  class="text-xs bg-tertiary-fixed px-2 py-1 rounded text-on-tertiary-fixed-variant font-bold mt-1 inline-block">Alle
+              Takken</span>
+          </div>
+        </div>
+        <!-- Picknick -->
+        <div
+             class="group grid grid-cols-1 md:grid-cols-12 items-center bg-surface-container-lowest p-6 rounded-xl gap-6 transition-all duration-300 hover:bg-surface-container-low border border-outline-variant/10">
+          <div class="md:col-span-2 flex flex-col"><span
+                  class="text-sm font-bold text-on-surface-variant/60 uppercase">Zondag</span> <span
+                  class="text-xl font-extrabold text-primary">24 Mei</span></div>
+          <div class="md:col-span-1 flex justify-center">
+            <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+              <span class="material-symbols-outlined">park</span></div>
+          </div>
+          <div class="md:col-span-9">
+            <h4 class="text-lg font-bold text-on-surface">Picknick</h4>
+            <span
+                  class="text-xs bg-tertiary-fixed px-2 py-1 rounded text-on-tertiary-fixed-variant font-bold mt-1 inline-block">Alle
+              Takken</span>
+          </div>
+        </div>
+        <!-- Bar Plein Air -->
+        <div
+             class="group grid grid-cols-1 md:grid-cols-12 items-center bg-surface-container-lowest p-6 rounded-xl gap-6 transition-all duration-300 hover:bg-surface-container-low border border-outline-variant/10">
+          <div class="md:col-span-2 flex flex-col"><span
+                  class="text-sm font-bold text-on-surface-variant/60 uppercase">Vrijdag</span> <span
+                  class="text-xl font-extrabold text-primary">18 Sep</span></div>
+          <div class="md:col-span-1 flex justify-center">
+            <div
+                 class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+              <span class="material-symbols-outlined">local_bar</span></div>
+          </div>
+          <div class="md:col-span-9">
+            <div class="flex items-center gap-4">
+              <h4 class="text-lg font-bold text-on-surface">Bar Plein Air</h4>
+              <a class="inline-flex items-center gap-1 text-sm font-bold text-secondary hover:underline"
+                 href="https://barpleinair.com/" target="_blank" rel="noopener noreferrer"> barpleinair.com <span
+                      class="material-symbols-outlined text-sm">open_in_new</span> </a>
+            </div>
+            <span
+                  class="text-xs bg-secondary-container px-2 py-1 rounded text-on-secondary-container font-bold mt-1 inline-block">Iedereen
+              welkom</span>
+          </div>
+        </div>
+        <!-- Familiedag + BBQ -->
+        <div
+             class="group grid grid-cols-1 md:grid-cols-12 items-center bg-surface-container-lowest p-6 rounded-xl gap-6 transition-all duration-300 hover:bg-surface-container-low border border-outline-variant/10">
+          <div class="md:col-span-2 flex flex-col"><span
+                  class="text-sm font-bold text-on-surface-variant/60 uppercase">Zaterdag</span> <span
+                  class="text-xl font-extrabold text-primary">19 Sep</span></div>
+          <div class="md:col-span-1 flex justify-center">
+            <div
+                 class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+              <span class="material-symbols-outlined">family_restroom</span></div>
+          </div>
+          <div class="md:col-span-9">
+            <h4 class="text-lg font-bold text-on-surface">Familiedag + BBQ</h4>
+            <span
+                  class="text-xs bg-secondary-container px-2 py-1 rounded text-on-secondary-container font-bold mt-1 inline-block">Iedereen
+              welkom</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Main Content -->
-    <main class="px-8 max-w-7xl mx-auto space-y-20">
-        <!-- Evenementen -->
-        <div>
-            <div class="flex items-center gap-4 mb-8">
-                <h2 class="text-3xl font-bold text-primary font-headline">Evenementen</h2>
-                <div class="h-[2px] flex-grow bg-outline-variant opacity-20"></div>
-            </div>
-            <div id="evenementen-list" class="cms-editable space-y-4">
-                <!-- Spaghettiavond -->
-                <div class="group grid grid-cols-1 md:grid-cols-12 items-center bg-surface-container-lowest p-6 rounded-xl gap-6 transition-all duration-300 hover:bg-surface-container-low border border-outline-variant/10">
-                    <div class="md:col-span-2 flex flex-col">
-                        <span class="text-sm font-bold text-on-surface-variant/60 uppercase">Zaterdag</span>
-                        <span class="text-xl font-extrabold text-primary">25 Apr</span>
-                    </div>
-                    <div class="md:col-span-1 flex justify-center">
-                        <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
-                            <span class="material-symbols-outlined">restaurant</span>
-                        </div>
-                    </div>
-                    <div class="md:col-span-9">
-                        <h4 class="text-lg font-bold text-on-surface">Spaghettiavond</h4>
-                        <span class="text-xs bg-secondary-container px-2 py-1 rounded text-on-secondary-container font-bold mt-1 inline-block">Iedereen welkom</span>
-                    </div>
-                </div>
-                <!-- Groepsdag -->
-                <div class="group grid grid-cols-1 md:grid-cols-12 items-center bg-surface-container-lowest p-6 rounded-xl gap-6 transition-all duration-300 hover:bg-surface-container-low border border-outline-variant/10">
-                    <div class="md:col-span-2 flex flex-col">
-                        <span class="text-sm font-bold text-on-surface-variant/60 uppercase">Zaterdag</span>
-                        <span class="text-xl font-extrabold text-primary">09 Mei</span>
-                    </div>
-                    <div class="md:col-span-1 flex justify-center">
-                        <div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
-                            <span class="material-symbols-outlined">groups</span>
-                        </div>
-                    </div>
-                    <div class="md:col-span-9">
-                        <h4 class="text-lg font-bold text-on-surface">Groepsdag</h4>
-                        <span class="text-xs bg-tertiary-fixed px-2 py-1 rounded text-on-tertiary-fixed-variant font-bold mt-1 inline-block">Alle Takken</span>
-                    </div>
-                </div>
-                <!-- Picknick -->
-                <div class="group grid grid-cols-1 md:grid-cols-12 items-center bg-surface-container-lowest p-6 rounded-xl gap-6 transition-all duration-300 hover:bg-surface-container-low border border-outline-variant/10">
-                    <div class="md:col-span-2 flex flex-col">
-                        <span class="text-sm font-bold text-on-surface-variant/60 uppercase">Zondag</span>
-                        <span class="text-xl font-extrabold text-primary">24 Mei</span>
-                    </div>
-                    <div class="md:col-span-1 flex justify-center">
-                        <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
-                            <span class="material-symbols-outlined">park</span>
-                        </div>
-                    </div>
-                    <div class="md:col-span-9">
-                        <h4 class="text-lg font-bold text-on-surface">Picknick</h4>
-                        <span class="text-xs bg-tertiary-fixed px-2 py-1 rounded text-on-tertiary-fixed-variant font-bold mt-1 inline-block">Alle Takken</span>
-                    </div>
-                </div>
-                <!-- Bar Plein Air -->
-                <div class="group grid grid-cols-1 md:grid-cols-12 items-center bg-surface-container-lowest p-6 rounded-xl gap-6 transition-all duration-300 hover:bg-surface-container-low border border-outline-variant/10">
-                    <div class="md:col-span-2 flex flex-col">
-                        <span class="text-sm font-bold text-on-surface-variant/60 uppercase">Vrijdag</span>
-                        <span class="text-xl font-extrabold text-primary">18 Sep</span>
-                    </div>
-                    <div class="md:col-span-1 flex justify-center">
-                        <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
-                            <span class="material-symbols-outlined">local_bar</span>
-                        </div>
-                    </div>
-                    <div class="md:col-span-9">
-                        <div class="flex items-center gap-4">
-                            <h4 class="text-lg font-bold text-on-surface">Bar Plein Air</h4>
-                            <a href="https://barpleinair.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-sm font-bold text-secondary hover:underline">
-                                barpleinair.com
-                                <span class="material-symbols-outlined text-sm">open_in_new</span>
-                            </a>
-                        </div>
-                        <span class="text-xs bg-secondary-container px-2 py-1 rounded text-on-secondary-container font-bold mt-1 inline-block">Iedereen welkom</span>
-                    </div>
-                </div>
-                <!-- Familiedag + BBQ -->
-                <div class="group grid grid-cols-1 md:grid-cols-12 items-center bg-surface-container-lowest p-6 rounded-xl gap-6 transition-all duration-300 hover:bg-surface-container-low border border-outline-variant/10">
-                    <div class="md:col-span-2 flex flex-col">
-                        <span class="text-sm font-bold text-on-surface-variant/60 uppercase">Zaterdag</span>
-                        <span class="text-xl font-extrabold text-primary">19 Sep</span>
-                    </div>
-                    <div class="md:col-span-1 flex justify-center">
-                        <div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
-                            <span class="material-symbols-outlined">family_restroom</span>
-                        </div>
-                    </div>
-                    <div class="md:col-span-9">
-                        <h4 class="text-lg font-bold text-on-surface">Familiedag + BBQ</h4>
-                        <span class="text-xs bg-secondary-container px-2 py-1 rounded text-on-secondary-container font-bold mt-1 inline-block">Iedereen welkom</span>
-                    </div>
-                </div>
-            </div>
+    <!-- Volledige Janneman Section -->
+    <div class="pb-20">
+      <div class="flex items-center gap-4 mb-8">
+        <h2 class="text-3xl font-bold text-primary font-headline">Volledige Janneman</h2>
+        <div class="h-[2px] flex-grow bg-outline-variant opacity-20"></div>
+      </div>
+
+      <div class="bg-surface-container-low rounded-2xl p-8 md:p-12">
+        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+          <a id="janneman-download"
+             class="cms-editable bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold flex items-center gap-2 hover:shadow-lg transition-all"
+             href="../uploads/janneman/janneman%20april26_merged_compressed.pdf" target="_blank" rel="noopener"><span
+                  class="material-symbols-outlined">open_in_new</span> Open de janneman</a>
+          <button onclick="togglePdfViewer()" id="toggle-pdf-btn"
+                  class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-headline font-bold flex items-center gap-2 hover:bg-surface-container-highest transition-all">
+            <span class="material-symbols-outlined">visibility</span>
+            Bekijk hier
+          </button>
         </div>
 
-        <!-- Volledige Janneman Section -->
-        <div class="pb-20">
-            <div class="flex items-center gap-4 mb-8">
-                <h2 class="text-3xl font-bold text-primary font-headline">Volledige Janneman</h2>
-                <div class="h-[2px] flex-grow bg-outline-variant opacity-20"></div>
-            </div>
-
-            <div class="bg-surface-container-low rounded-2xl p-8 md:p-12">
-                <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                    <a id="janneman-download" class="cms-editable bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold flex items-center gap-2 hover:shadow-lg transition-all" href="/uploads/janneman.pdf" target="_blank">
-                        <span class="material-symbols-outlined">open_in_new</span>
-                        Open de janneman
-                    </a>
-                    <button onclick="togglePdfViewer()" id="toggle-pdf-btn" class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-headline font-bold flex items-center gap-2 hover:bg-surface-container-highest transition-all">
-                        <span class="material-symbols-outlined">visibility</span>
-                        Bekijk hier
-                    </button>
-                </div>
-
-                <div id="pdf-viewer" class="hidden">
-                    <iframe id="janneman-iframe" class="w-full rounded-xl bg-surface-container-highest" style="height: 80vh; min-height: 600px;" title="Janneman PDF"></iframe>
-                </div>
-            </div>
+        <div id="pdf-viewer" class="hidden">
+          <iframe id="janneman-iframe" class="w-full rounded-xl bg-surface-container-highest"
+                  style="height: 80vh; min-height: 600px;" title="Janneman PDF"></iframe>
         </div>
-    </main>
+      </div>
+    </div>
+  </main>
 
-    <div id="footer-placeholder"></div>
+  <div id="footer-placeholder"></div>
 
-    <script>
-        function togglePdfViewer() {
-            var viewer = document.getElementById('pdf-viewer');
-            var iframe = document.getElementById('janneman-iframe');
-            var btn = document.getElementById('toggle-pdf-btn');
-            var link = document.getElementById('janneman-download');
-            var pdfUrl = link.getAttribute('href');
+  <script>
+    function togglePdfViewer() {
+      var viewer = document.getElementById('pdf-viewer');
+      var iframe = document.getElementById('janneman-iframe');
+      var btn = document.getElementById('toggle-pdf-btn');
+      var link = document.getElementById('janneman-download');
+      var pdfUrl = link.getAttribute('href');
+      if (viewer.classList.contains('hidden')) {
+        iframe.src = pdfUrl;
+        viewer.classList.remove('hidden');
+        btn.innerHTML = '<span class="material-symbols-outlined">visibility_off</span> Verberg';
+        viewer.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      } else {
+        viewer.classList.add('hidden');
+        iframe.src = '';
+        btn.innerHTML = '<span class="material-symbols-outlined">visibility</span> Bekijk hier';
+      }
+    }
 
-            if (viewer.classList.contains('hidden')) {
-                iframe.src = pdfUrl;
-                viewer.classList.remove('hidden');
-                btn.innerHTML = '<span class="material-symbols-outlined">visibility_off</span> Verberg';
-                viewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            } else {
-                viewer.classList.add('hidden');
-                iframe.src = '';
-                btn.innerHTML = '<span class="material-symbols-outlined">visibility</span> Bekijk hier';
-            }
-        }
-    </script>
+  </script>
 
-<script src="/js/includes.js"></script>
+  <script src="/js/includes.js"></script>
+
 </body>
 </html>
