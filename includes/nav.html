@@ -1,0 +1,56 @@
+<nav class="fixed top-0 w-full z-50 bg-[#fdf9ef]/80 backdrop-blur-md">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-16">
+        <a href="/" class="text-2xl font-extrabold text-[#5a2e00] font-headline tracking-tight">Scouts Vremde</a>
+        <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+            <a class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="/" data-page="index">Home</a>
+            <a class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="/pages/takken.html" data-page="takken">Takken</a>
+            <a class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="/pages/janneman.html" data-page="janneman">Janneman</a>
+            <div class="relative group">
+                <button class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200 flex items-center gap-1" data-page="info">
+                    Info
+                    <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span>
+                </button>
+                <div class="absolute top-full -left-4 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                    <div class="bg-[#fdf9ef]/95 backdrop-blur-md rounded-xl py-2 min-w-[200px] shadow-lg shadow-[#1c1c16]/5">
+                        <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="/pages/scouting.html">Scouting</a>
+                        <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="/pages/subsidies.html">Subsidies</a>
+                        <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="/pages/uniform.html">Uniform</a>
+                        <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="/pages/nieuwe-leden.html">Nieuwe leden</a>
+                        <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="/pages/rvb.html">RVB</a>
+                        <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="/pages/verloren-voorwerpen.html">Verloren Voorwerpen</a>
+                        <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="/pages/scouting-op-maat.html">Scouting op maat</a>
+                    </div>
+                </div>
+            </div>
+            <a class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="/pages/contact.html" data-page="contact">Contact</a>
+            <a class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="/pages/verhuur.html" data-page="verhuur">Verhuur</a>
+        </div>
+        <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden ml-auto p-2 text-[#5a2e00]">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#fdf9ef]/95 backdrop-blur-md border-t border-[#5a2e00]/10">
+        <div class="flex flex-col px-6 py-4 gap-4 font-headline font-bold tracking-tight">
+            <a class="nav-link text-[#1c1c16] opacity-80 py-2" href="/" data-page="index">Home</a>
+            <a class="nav-link text-[#1c1c16] opacity-80 py-2" href="/pages/takken.html" data-page="takken">Takken</a>
+            <a class="nav-link text-[#1c1c16] opacity-80 py-2" href="/pages/janneman.html" data-page="janneman">Janneman</a>
+            <div>
+                <button onclick="document.getElementById('mobile-info-menu').classList.toggle('hidden')" class="text-[#1c1c16] opacity-80 py-2 flex items-center gap-1 w-full">
+                    Info
+                    <span class="material-symbols-outlined text-sm">expand_more</span>
+                </button>
+                <div id="mobile-info-menu" class="hidden pl-4 flex flex-col gap-3 pb-2">
+                    <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="/pages/scouting.html">Scouting</a>
+                    <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="/pages/subsidies.html">Subsidies</a>
+                    <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="/pages/uniform.html">Uniform</a>
+                    <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="/pages/nieuwe-leden.html">Nieuwe leden</a>
+                    <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="/pages/rvb.html">RVB</a>
+                    <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="/pages/verloren-voorwerpen.html">Verloren Voorwerpen</a>
+                    <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="/pages/scouting-op-maat.html">Scouting op maat</a>
+                </div>
+            </div>
+            <a class="nav-link text-[#1c1c16] opacity-80 py-2" href="/pages/contact.html" data-page="contact">Contact</a>
+            <a class="nav-link text-[#1c1c16] opacity-80 py-2" href="/pages/verhuur.html" data-page="verhuur">Verhuur</a>
+        </div>
+    </div>
+</nav>
