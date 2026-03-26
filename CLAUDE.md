@@ -53,7 +53,9 @@ scouts-vremde/
 
 ## Design System
 
-The design system is documented in `DESIGN.md` and follows an "Editorial Adventure / Guided Expedition" aesthetic. Key constraints:
+**Always follow the design choices documented in `DESIGN.md`.** It is the single source of truth for all visual and layout decisions. The summary below highlights key constraints, but when in doubt, consult `DESIGN.md` directly.
+
+The design system follows an "Editorial Adventure / Guided Expedition" aesthetic. Key constraints:
 
 - **No 1px borders** for sectioning — use tonal surface transitions instead
 - **No pure black** (`#000000`) — always use `on-background` (`#1c1c16`)
