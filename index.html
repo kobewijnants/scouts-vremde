@@ -20,6 +20,23 @@
                 <a class="text-[#3b6934] border-b-2 border-[#3b6934] pb-1" href="index.html">Home</a>
                 <a class="text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="pages/takken.html">Takken</a>
                 <a class="text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="pages/janneman.html">Janneman</a>
+                <div class="relative group">
+                    <button class="text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200 flex items-center gap-1">
+                        Info
+                        <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span>
+                    </button>
+                    <div class="absolute top-full -left-4 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="bg-[#fdf9ef]/95 backdrop-blur-md rounded-xl py-2 min-w-[200px] shadow-lg shadow-[#1c1c16]/5">
+                            <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="pages/scouting.html">Scouting</a>
+                            <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="pages/subsidies.html">Subsidies</a>
+                            <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="pages/uniform.html">Uniform</a>
+                            <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="pages/nieuwe-leden.html">Nieuwe leden</a>
+                            <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="pages/rvb.html">RVB</a>
+                            <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="pages/verloren-voorwerpen.html">Verloren Voorwerpen</a>
+                            <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="pages/scouting-op-maat.html">Scouting op maat</a>
+                        </div>
+                    </div>
+                </div>
                 <a class="text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="pages/contact.html">Contact</a>
                 <a class="text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="pages/verhuur.html">Verhuur</a>
             </div>
@@ -33,6 +50,21 @@
                 <a class="text-[#3b6934] py-2" href="index.html">Home</a>
                 <a class="text-[#1c1c16] opacity-80 py-2" href="pages/takken.html">Takken</a>
                 <a class="text-[#1c1c16] opacity-80 py-2" href="pages/janneman.html">Janneman</a>
+                <div>
+                    <button onclick="document.getElementById('mobile-info-menu').classList.toggle('hidden')" class="text-[#1c1c16] opacity-80 py-2 flex items-center gap-1 w-full">
+                        Info
+                        <span class="material-symbols-outlined text-sm">expand_more</span>
+                    </button>
+                    <div id="mobile-info-menu" class="hidden pl-4 flex flex-col gap-3 pb-2">
+                        <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="pages/scouting.html">Scouting</a>
+                        <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="pages/subsidies.html">Subsidies</a>
+                        <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="pages/uniform.html">Uniform</a>
+                        <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="pages/nieuwe-leden.html">Nieuwe leden</a>
+                        <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="pages/rvb.html">RVB</a>
+                        <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="pages/verloren-voorwerpen.html">Verloren Voorwerpen</a>
+                        <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="pages/scouting-op-maat.html">Scouting op maat</a>
+                    </div>
+                </div>
                 <a class="text-[#1c1c16] opacity-80 py-2" href="pages/contact.html">Contact</a>
                 <a class="text-[#1c1c16] opacity-80 py-2" href="pages/verhuur.html">Verhuur</a>
             </div>
@@ -59,9 +91,9 @@
                         Janneman
                         <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
-                    <button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-surface-container-highest transition-all">
-                        Onze Werking
-                    </button>
+                    <a href="pages/takken.html" class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-surface-container-highest transition-all">
+                        Onze Takken
+                    </a>
                 </div>
             </div>
         </section>
