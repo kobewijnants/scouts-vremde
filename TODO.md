@@ -1,7 +1,7 @@
 # TODO
 
-## Wist je dat toevoegen aan homepagina
+## Inschrijvingen?
 
-Container met leuke weetjes over de afgelopen weken over onze scouts, takken, leden, leiding
+## Foto galerij?
 
-## fix contact de leiding
+## CMS system
