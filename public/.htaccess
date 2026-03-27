@@ -15,11 +15,7 @@ Options -Indexes
 # Hide Apache version info
 ServerSignature Off
 
-# Redirect HTTP to HTTPS
-<IfModule mod_rewrite.c>
-    RewriteCond %{HTTPS} !=on
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-</IfModule>
+# Note: HTTPS redirect is handled by the reverse proxy, not here
 
 # Security headers
 <IfModule mod_headers.c>
