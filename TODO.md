@@ -6,56 +6,28 @@
 
 ## Security
 
-- **Enable HTTPS** – Use Let's Encrypt (free) with `certbot` for SSL/TLS certificates
-- **Disable directory listing** – `Options -Indexes`
-- **Hide Apache version info** – `ServerTokens Prod` and `ServerSignature Off`
-- **Set security headers:**
-  ```apache
-  Header set X-Content-Type-Options "nosniff"
-  Header set X-Frame-Options "SAMEORIGIN"
-  Header set X-XSS-Protection "1; mode=block"
-  Header set Content-Security-Policy "default-src 'self'"
-  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
-  Header set Referrer-Policy "strict-origin-when-cross-origin"
-  Header set Permissions-Policy "geolocation=(), camera=(), microphone=()"
-  ```
-- **Disable unused modules** – `a2dismod` anything you don't need
-- **Set proper file permissions** – `chmod 644` for files, `755` for directories
-- **Keep Apache updated** – `sudo apt update && sudo apt upgrade`
-- **Configure a firewall** – Use `ufw` to only allow ports 80, 443, and SSH
-- **Disable TRACE method** – `TraceEnable Off`
+- [x] **Enable HTTPS** – Redirect HTTP→HTTPS via `.htaccess`
+- [x] **Disable directory listing** – `Options -Indexes` in `.htaccess`
+- [x] **Hide Apache version info** – `ServerSignature Off` in `.htaccess` (`ServerTokens Prod` needs server config)
+- [x] **Set security headers** – All set in `.htaccess` (CSP, HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy)
+- [ ] **Disable unused modules** – `a2dismod` anything you don't need (server-side)
+- [ ] **Set proper file permissions** – `chmod 644` for files, `755` for directories (server-side)
+- [ ] **Keep Apache updated** – `sudo apt update && sudo apt upgrade` (server-side)
+- [ ] **Configure a firewall** – Use `ufw` to only allow ports 80, 443, and SSH (server-side)
+- [x] **Disable TRACE method** – Blocked via RewriteRule in `.htaccess`
+- [x] **Block access to hidden files** – Added in `.htaccess` (except `.well-known`)
 
 ---
 
 ## ⚡ Performance
 
-- **Enable compression:**
-  ```apache
-  a2enmod deflate
-  # Compress HTML, CSS, JS, XML, JSON, fonts, SVGs
-  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
-  ```
-- **Enable browser caching:**
-  ```apache
-  a2enmod expires
-  <IfModule mod_expires.c>
-      ExpiresActive On
-      ExpiresByType image/jpeg "access plus 1 year"
-      ExpiresByType image/png "access plus 1 year"
-      ExpiresByType text/css "access plus 1 month"
-      ExpiresByType application/javascript "access plus 1 month"
-  </IfModule>
-  ```
-- **Enable HTTP/2** – `a2enmod http2` and add `Protocols h2 http/1.1`
-- **Enable KeepAlive:**
-  ```apache
-  KeepAlive On
-  MaxKeepAliveRequests 100
-  KeepAliveTimeout 5
-  ```
-- **Minimize .htaccess use** – Put rules in the VirtualHost config instead (`AllowOverride None`) since `.htaccess` is checked on every request
-- **Optimize images** – Use WebP format, compress with tools like `imagemagick`
-- **Minify CSS/JS** – Use build tools or online minifiers
+- [x] **Enable compression** – Deflate configured in `.htaccess` (HTML, CSS, JS, JSON, SVG, fonts)
+- [x] **Enable browser caching** – Expires configured in `.htaccess` (1 week for assets)
+- [ ] **Enable HTTP/2** – `a2enmod http2` and add `Protocols h2 http/1.1` (server-side)
+- [x] **Enable KeepAlive** – Connection keep-alive header set in `.htaccess`
+- [ ] **Minimize .htaccess use** – Consider moving rules to VirtualHost config (server-side)
+- [ ] **Optimize images** – Use WebP format, compress with tools like `imagemagick`
+- [ ] **Minify CSS/JS** – Use build tools or online minifiers
 
 ---
 
@@ -79,11 +51,7 @@
   </VirtualHost>
   ```
 - **Redirect www to non-www** (or vice versa) for canonical URLs
-- **Custom error pages:**
-  ```apache
-  ErrorDocument 404 /errors/404.html
-  ErrorDocument 500 /errors/500.html
-  ```
+- [x] **Custom error pages** – `errors/404.html` and `errors/500.html` created, referenced in `.htaccess`
 
 ---
 
@@ -98,11 +66,11 @@
 
 ## 🌐 SEO & Accessibility
 
-- **Add a `robots.txt`** file
-- **Create a sitemap.xml**
-- **Set proper MIME types**
-- **Ensure mobile responsiveness** in your HTML/CSS
-- **Use clean URLs** with `mod_rewrite`
+- [x] **Add a `robots.txt`** file
+- [x] **Create a sitemap.xml**
+- [ ] **Set proper MIME types**
+- [ ] **Ensure mobile responsiveness** in your HTML/CSS
+- [ ] **Use clean URLs** with `mod_rewrite`
 
 ---
 
