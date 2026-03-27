@@ -1,5 +1,9 @@
 # TODO
 
+## foto lio
+
+## zie bericht seppe
+
 ## jin foto zie jarne
 
 ## Inschrijvingen?
