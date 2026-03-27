@@ -6,31 +6,45 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Website for Scouts & Gidsen Sint-Jan in d'Olie Vremde (https://www.scoutsvremde.be) — a Belgian scouts group.
 
-Static HTML site using Tailwind CSS via CDN, no build tools. All pages share a Tailwind config (`js/tailwind.config.js`) and custom CSS (`css/styles.css`).
+Static HTML site using Tailwind CSS via CDN, no build tools. All pages share a Tailwind config (`public/js/tailwind.config.js`) and custom CSS (`public/css/styles.css`).
+
+Apache `DocumentRoot` points to `public/` — only files inside `public/` are served. Dev/config files at the repo root (CLAUDE.md, DESIGN.md, TODO.md, etc.) are never accessible to visitors.
 
 ## File Structure
 
 ```
 scouts-vremde/
-├── index.html                    # Homepage
-├── CLAUDE.md
-├── DESIGN.md
-├── README.md
-├── css/
-│   └── styles.css                # Shared custom CSS
-├── js/
-│   └── tailwind.config.js        # Shared Tailwind config with design tokens
-├── img/
-│   └── homepage.jpg              # Homepage hero image
-├── jannemannen/
-│   └── janneman.pdf              # Full Janneman PDF
-│   # Per-tak PDFs go here: kapoenen.pdf, welpen.pdf, etc.
-└── pages/
-    ├── takken.html               # Takken overview (8 tak cards)
-    ├── tak-kapoenen.html         # Kapoenen detail page
-    ├── janneman.html             # Events + per-tak PDF viewer with tabs
-    ├── contact.html              # Contact info, groepsleiding, location with Maps
-    └── verhuur.html              # Material rental page
+├── CLAUDE.md                         # (not served)
+├── DESIGN.md                         # (not served)
+├── README.md                         # (not served)
+├── TODO.md                           # (not served)
+├── .github/                          # (not served)
+└── public/                           # ← DocumentRoot
+    ├── .htaccess                     # Security headers, caching, compression
+    ├── index.html                    # Homepage
+    ├── favicon.ico
+    ├── robots.txt
+    ├── sitemap.xml
+    ├── css/
+    │   └── styles.css                # Shared custom CSS
+    ├── js/
+    │   └── tailwind.config.js        # Shared Tailwind config with design tokens
+    ├── img/
+    │   └── homepage.jpg              # Homepage hero image
+    ├── includes/
+    │   ├── nav.html                  # Shared navigation (loaded via JS)
+    │   └── footer.html               # Shared footer (loaded via JS)
+    ├── errors/
+    │   ├── 404.html                  # Custom 404 page
+    │   └── 500.html                  # Custom 500 page
+    ├── pages/
+    │   ├── takken.html               # Takken overview
+    │   ├── tak-kapoenen.html         # Kapoenen detail page
+    │   ├── janneman.html             # Events + per-tak PDF viewer with tabs
+    │   ├── contact.html              # Contact info, groepsleiding, location
+    │   └── verhuur.html              # Material rental page
+    ├── docs/                         # Public documents (privacy policy, etc.)
+    └── uploads/                      # Uploaded content
 ```
 
 ## Navigation
@@ -39,8 +53,8 @@ scouts-vremde/
 - Desktop: horizontal links in navbar
 - Mobile: hamburger menu toggling a dropdown
 - Active page highlighted in green (`#3b6934`) with bottom border
-- Each page has its own nav/footer (no templating — static site)
-- `index.html` uses `pages/` prefix for links; subpages use relative paths
+- Nav and footer are loaded via `includes.js` from `/includes/nav.html` and `/includes/footer.html`
+- All internal links use absolute paths (e.g., `/pages/takken.html`)
 
 ## Key Info
 
