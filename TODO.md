@@ -70,7 +70,7 @@
 - [x] **Create a sitemap.xml**
 - [ ] **Set proper MIME types**
 - [ ] **Ensure mobile responsiveness** in your HTML/CSS
-- [ ] **Use clean URLs** with `mod_rewrite`
+- [x] **Use clean URLs** with `mod_rewrite`
 
 ---
 

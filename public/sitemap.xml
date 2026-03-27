@@ -5,79 +5,79 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/takken.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/takken</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/janneman.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/janneman</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/contact.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/contact</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/verhuur.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/verhuur</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/scouting.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/scouting</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/nieuwe-leden.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/nieuwe-leden</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/uniform.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/uniform</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/subsidies.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/subsidies</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/rvb.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/rvb</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/verloren-voorwerpen.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/verloren-voorwerpen</loc>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/scouting-op-maat.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/scouting-op-maat</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/tak-kapoenen.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/tak-kapoenen</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/tak-welpen.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/tak-welpen</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/tak-kabouters.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/tak-kabouters</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/tak-jong-verkenners.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/tak-jong-verkenners</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/tak-jong-gidsen.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/tak-jong-gidsen</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/tak-verkenners.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/tak-verkenners</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/tak-gidsen.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/tak-gidsen</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://scoutsvremde.kobecloud.be/pages/tak-jins.html</loc>
+    <loc>https://scoutsvremde.kobecloud.be/tak-jins</loc>
     <priority>0.6</priority>
   </url>
 </urlset>

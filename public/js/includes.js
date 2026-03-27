@@ -1,17 +1,18 @@
 (function() {
     var path = window.location.pathname;
 
-    // Determine active page from URL
+    // Determine active page from URL (supports clean URLs like /contact)
     var activePage = 'index';
     var infoPages = ['scouting', 'subsidies', 'uniform', 'nieuwe-leden', 'rvb', 'verloren-voorwerpen', 'scouting-op-maat'];
+    var segments = path.split('/').filter(Boolean);
 
-    if (path.includes('/pages/')) {
-        var filename = path.split('/').pop().replace('.html', '');
-        if (['takken', 'janneman', 'contact', 'verhuur'].indexOf(filename) !== -1) {
-            activePage = filename;
-        } else if (filename.startsWith('tak-')) {
+    if (segments.length > 0) {
+        var page = segments[segments.length - 1].replace('.html', '');
+        if (['takken', 'janneman', 'contact', 'verhuur'].indexOf(page) !== -1) {
+            activePage = page;
+        } else if (page.startsWith('tak-')) {
             activePage = 'takken';
-        } else if (infoPages.indexOf(filename) !== -1) {
+        } else if (infoPages.indexOf(page) !== -1) {
             activePage = 'info';
         }
     }

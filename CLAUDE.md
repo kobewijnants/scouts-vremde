@@ -54,7 +54,9 @@ scouts-vremde/
 - Mobile: hamburger menu toggling a dropdown
 - Active page highlighted in green (`#3b6934`) with bottom border
 - Nav and footer are loaded via `includes.js` from `/includes/nav.html` and `/includes/footer.html`
-- All internal links use absolute paths (e.g., `/pages/takken.html`)
+- All internal links use clean URLs (e.g., `/contact`, `/takken`, `/tak-kapoenen`)
+- Apache mod_rewrite maps clean URLs to `/pages/*.html` files internally
+- Old `/pages/*.html` URLs are 301-redirected to their clean equivalents
 
 ## Key Info
 
