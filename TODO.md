@@ -135,6 +135,21 @@ sudo apache2ctl configtest
 
 Would you like me to dive deeper into any of these areas?
 
+## SSL grade
+
+https://www.ssllabs.com/ssltest/
+
+This server does not support Forward Secrecy with the reference browsers. https://blog.qualys.com/ssllabs/2018/02/02/forward-secrecy-authenticated-encryption-and-robot-grading-update
+
+This server supports TLS 1.0 and TLS 1.1. https://blog.qualys.com/ssllabs/2018/11/19/grade-change-for-tls-1-0-and-tls-1-1-protocols
+
+This site works only in browsers with SNI support. 
+
+DNS CAA: no https://blog.qualys.com/ssllabs/2017/03/13/caa-mandated-by-cabrowser-forum
+
+disable TLS 1.0 and 1.1, set preferred for 1.2
+
+
 ## Missing headers
 
 https://securityheaders.com/?q=scoutsvremde.kobecloud.be&followRedirects=on
