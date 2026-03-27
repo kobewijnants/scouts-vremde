@@ -82,6 +82,31 @@ ServerSignature Off
 </IfModule>
 
 # ============================================================
+# MIME types
+# ============================================================
+<IfModule mod_mime.c>
+    # Web fonts
+    AddType font/woff2 .woff2
+    AddType font/woff .woff
+    AddType font/ttf .ttf
+    AddType font/otf .otf
+
+    # Images
+    AddType image/webp .webp
+    AddType image/svg+xml .svg .svgz
+    AddType image/x-icon .ico
+
+    # Media
+    AddType video/mp4 .mp4
+    AddType video/webm .webm
+
+    # Data
+    AddType application/json .json
+    AddType application/manifest+json .webmanifest
+    AddType text/xml .xml
+</IfModule>
+
+# ============================================================
 # Custom error pages
 # ============================================================
 ErrorDocument 400 /errors/404.html

@@ -68,7 +68,7 @@
 
 - [x] **Add a `robots.txt`** file
 - [x] **Create a sitemap.xml**
-- [ ] **Set proper MIME types**
+- [x] **Set proper MIME types**
 - [ ] **Ensure mobile responsiveness** in your HTML/CSS
 - [x] **Use clean URLs** with `mod_rewrite`
 
