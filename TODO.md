@@ -1,5 +1,7 @@
 # TODO
 
+## jin foto zie jarne
+
 ## Inschrijvingen?
 
 ## Foto galerij?
