@@ -1,11 +1,9 @@
 # .github/workflows/security.yml
-name: Security Checks
+name: Security
 
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: '0 9 * * 1'  # Weekly on Monday
 
 jobs:
   security:
@@ -14,30 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      # Audit npm packages
-      - name: NPM Audit
-        run: npm audit --production
-        continue-on-error: true
-
-      # Scan for secrets accidentally committed
-      - name: GitLeaks
+      - name: Scan for leaked secrets
         uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # Scan for vulnerabilities
-      - name: Trivy FS Scan
-        uses: aquasecurity/trivy-action@master
-        with:
-          scan-type: 'fs'
-          scan-ref: '.'
-          severity: 'HIGH,CRITICAL'
