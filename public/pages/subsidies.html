@@ -18,10 +18,102 @@
         <header class="mb-16">
             <span class="bg-secondary-fixed text-on-secondary-fixed-variant px-3 py-1 rounded-md text-xs font-bold uppercase tracking-widest mb-4 inline-block">Info</span>
             <h1 class="text-3xl sm:text-5xl md:text-7xl font-headline font-extrabold text-primary tracking-tight mb-6">Subsidies</h1>
-            <p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed">Informatie over beschikbare subsidies en financiële tegemoetkomingen voor scoutsleden.</p>
+            <p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed">Veel ziekenfondsen voorzien tegemoetkomingen voor lidgeld en kampen. Bekijk hieronder wat jouw mutualiteit terugbetaalt.</p>
         </header>
         <section class="bg-surface-container-low rounded-3xl p-6 md:p-12">
-            <p class="text-on-surface-variant text-lg">Deze pagina wordt binnenkort aangevuld.</p>
+            <div id="subsidies-content" class="cms-editable space-y-6">
+
+                <div class="bg-surface-container rounded-2xl p-6 md:p-8">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+                            <span class="material-symbols-outlined text-lg">health_and_safety</span>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-headline font-bold text-primary">Christelijke Mutualiteit (CM)</h2>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold px-3 py-1 rounded-md">Kamp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        Voor kampen, bosklassen, speelpleinwerking etc. voorziet de CM een tegemoetkoming aan CM-leden van &euro;5 per dag. Dit bedrag is begrensd tot &euro;100 per kalenderjaar. Dit geldt voor kinderen waarvoor u kinderbijslag ontvangt en die jonger zijn dan 24 jaar.
+                    </p>
+                    <p class="text-on-surface-variant leading-relaxed mt-3 bg-primary-fixed/30 rounded-xl px-4 py-3 text-sm">
+                        <span class="font-bold text-primary">Let op:</span> Sinds 2019 is de CM gestopt met tegemoetkomingen in het lidgeld. De kamptegemoetkoming van &euro;5 per dag blijft wel behouden.
+                    </p>
+                </div>
+
+                <div class="bg-surface-container rounded-2xl p-6 md:p-8">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+                            <span class="material-symbols-outlined text-lg">health_and_safety</span>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-headline font-bold text-primary">Onafhankelijk Ziekenfonds (OZ)</h2>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="bg-secondary-container text-on-secondary-container text-xs font-bold px-3 py-1 rounded-md">Lidgeld</span>
+                                <span class="bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold px-3 py-1 rounded-md">Kamp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        Het OZ betaalt tot &euro;20 terug op het lidgeld van een erkende jeugdvereniging, zonder leeftijdsbeperking. Voor kampen en weekends betaalt het OZ tot &euro;5 per dag terug, begrensd tot maximaal 20 dagen per kalenderjaar. Dit geldt voor jongeren t.e.m. 18 jaar.
+                    </p>
+                </div>
+
+                <div class="bg-surface-container rounded-2xl p-6 md:p-8">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+                            <span class="material-symbols-outlined text-lg">health_and_safety</span>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-headline font-bold text-primary">Partena Ziekenfonds</h2>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold px-3 py-1 rounded-md">Kamp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        Partena komt niet tussen in het lidgeld. Partena betaalt wel tot &euro;5 per dag terug voor meerdaagse activiteiten in Belgi&euml;, Luxemburg, Duitsland, Nederland en Frankrijk, begrensd tot maximaal 20 dagen per kalenderjaar. Hieronder vallen de weekends en het binnenlands kamp. Dit geldt voor jongeren t.e.m. 18 jaar.
+                    </p>
+                </div>
+
+                <div class="bg-surface-container rounded-2xl p-6 md:p-8">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+                            <span class="material-symbols-outlined text-lg">health_and_safety</span>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-headline font-bold text-primary">Liberale Mutualiteit (LM)</h2>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="bg-secondary-container text-on-secondary-container text-xs font-bold px-3 py-1 rounded-md">Lidgeld</span>
+                                <span class="bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold px-3 py-1 rounded-md">Kamp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        De Liberale Mutualiteit betaalt tot &euro;15 terug op het lidgeld van een erkende jeugdvereniging. Ze komt ook tussen voor kampen en weekends met &euro;5 per overnachting, met een maximum van 10 overnachtingen per kalenderjaar. Dit geldt voor jongeren t.e.m. 18 jaar.
+                    </p>
+                </div>
+
+                <div class="bg-surface-container rounded-2xl p-6 md:p-8">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+                            <span class="material-symbols-outlined text-lg">health_and_safety</span>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-headline font-bold text-primary">Vlaams &amp; Neutraal Ziekenfonds (VNZ)</h2>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold px-3 py-1 rounded-md">Kamp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        Het VNZ komt niet tussen in het lidgeld voor jeugdbewegingen, wel voor sportverenigingen. Het VNZ komt wel tussen voor kampen en weekends met &euro;5 per dag, met een maximum van &euro;120 per kalenderjaar. Dit geldt voor jongeren t.e.m. 18 jaar.
+                    </p>
+                </div>
+
+            </div>
         </section>
     </main>
 
