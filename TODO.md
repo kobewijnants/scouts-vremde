@@ -26,7 +26,7 @@
 - [ ] **Enable HTTP/2** – `a2enmod http2` and add `Protocols h2 http/1.1` (server-side)
 - [x] **Enable KeepAlive** – Connection keep-alive header set in `.htaccess`
 - [ ] **Minimize .htaccess use** – Consider moving rules to VirtualHost config (server-side)
-- [ ] **Optimize images** – Use WebP format, compress with tools like `imagemagick`
+- [x] **Optimize images** – Converted to WebP, resized oversized logos, added lazy loading
 - [ ] **Minify CSS/JS** – Use build tools or online minifiers
 
 ---
