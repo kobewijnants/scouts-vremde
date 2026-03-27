@@ -1,3 +1,4 @@
 # Scouts Vremde
 
-Website voor (https://www.scoutsvremde.be)[scouts vremde]
+Website for https://www.scoutsvremde.be
+Tests are published on https://scoutsvremde.kobecloud.be
