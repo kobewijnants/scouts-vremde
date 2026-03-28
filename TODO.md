@@ -57,13 +57,13 @@
 
 ## SEO
 
-- [ ] **Fill in `og:description` and `og:image` on all pages** – Social sharing cards currently show no image or description
-- [ ] **Fix `og:url` to use clean URLs** – Tak pages still reference old `/pages/*.html` paths
-- [ ] **Add `<link rel="canonical">` on all pages**
-- [ ] **Add structured data (JSON-LD)** – `Organization` schema with address, phone, social links for rich search results
-- [ ] **Add `<lastmod>` dates to sitemap.xml**
-- [ ] **Fix Lighthouse CI to scan canonical URLs** – Currently scans `/pages/takken.html` instead of `/takken`
-- [ ] **Fill in missing `<meta name="description">` on all pages**
+- [x] **Fill in `og:description` and `og:image` on all pages** – Social sharing cards currently show no image or description
+- [x] **Fix `og:url` to use clean URLs** – Uses SSI `SITE_URL` variable from .htaccess
+- [x] **Add `<link rel="canonical">` on all pages**
+- [x] **Add structured data (JSON-LD)** – `Organization` schema on homepage with address, email, social links
+- [x] **Add `<lastmod>` dates to sitemap.xml** – Also added missing tak-leiding entry
+- [x] **Fix Lighthouse CI to scan canonical URLs** – Now scans `/takken` instead of `/pages/takken.html`
+- [x] **Fill in missing `<meta name="description">` on all pages**
 
 ---
 

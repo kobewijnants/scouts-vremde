@@ -15,5 +15,5 @@ jobs:
         with:
           urls: |
             https://scoutsvremde.kobecloud.be
-            https://scoutsvremde.kobecloud.be/pages/takken.html
+            https://scoutsvremde.kobecloud.be/takken
           uploadArtifacts: true
