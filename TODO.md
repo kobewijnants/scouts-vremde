@@ -23,11 +23,11 @@
 - [ ] **Enable HTTP/2** – `a2enmod http2` and add `Protocols h2 http/1.1` (server-side)
 - [ ] **Minimize .htaccess use** – Consider moving rules to VirtualHost config (server-side)
 - [ ] **Minify CSS/JS** – Use build tools or online minifiers
-- [ ] **Add `preconnect` hints for Google Fonts** – Add `<link rel="preconnect" href="https://fonts.googleapis.com">` and `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>` to all pages
-- [ ] **Combine Google Fonts into one request** – Merge Plus Jakarta Sans/Manrope and Material Symbols into a single `<link>`
-- [ ] **Add `fetchpriority="high"` on hero LCP images** – Tell the browser to prioritize the main hero image on each page
-- [ ] **Preload hero images** – Add `<link rel="preload">` for hero images to improve LCP
-- [ ] **Convert Verkenners janneman PNGs to WebP** – Two PNG screenshots on tak-verkenners.html are the only non-WebP images left
+- [x] **Add `preconnect` hints for Google Fonts** – Add `<link rel="preconnect" href="https://fonts.googleapis.com">` and `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>` to all pages
+- [x] **Combine Google Fonts into one request** – Merge Plus Jakarta Sans/Manrope and Material Symbols into a single `<link>`
+- [x] **Add `fetchpriority="high"` on hero LCP images** – Tell the browser to prioritize the main hero image on each page
+- [x] **Preload hero images** – Add `<link rel="preload">` for hero images to improve LCP
+- [x] **Convert Verkenners janneman PNGs to WebP** – Two PNG screenshots on tak-verkenners.html are the only non-WebP images left
 
 ---
 
