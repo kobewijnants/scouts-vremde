@@ -2,8 +2,6 @@
 
 ## Inschrijvingen?
 
-## Foto galerij?
-
 ## Security
 
 - [ ] **Disable unused modules** – `a2dismod` anything you don't need (server-side)

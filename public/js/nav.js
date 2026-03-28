@@ -50,7 +50,7 @@ document.querySelectorAll('.current-year').forEach(function(el) {
     var segments = path.split('/').filter(Boolean);
     if (segments.length > 0) {
         var page = segments[segments.length - 1].replace('.html', '');
-        if (['takken','janneman','galerij','contact','verhuur'].indexOf(page) !== -1) activePage = page;
+        if (['takken','janneman','contact','verhuur'].indexOf(page) !== -1) activePage = page;
         else if (page.startsWith('tak-')) activePage = 'takken';
         else if (infoPages.indexOf(page) !== -1) activePage = 'info';
     }
