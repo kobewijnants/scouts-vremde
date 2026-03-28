@@ -8,35 +8,8 @@
     // Use pageshow instead of DOMContentLoaded so it also fires on
     // back/forward navigation (bfcache restore)
     window.addEventListener('pageshow', function() {
-        document.body.classList.remove('page-leaving');
         document.body.classList.add('page-loaded');
         initScrollReveal();
-    });
-
-    // ── Page Fade-Out on internal navigation ──────────────────────────────
-    document.addEventListener('click', function(e) {
-        var link = e.target.closest('a');
-        if (!link) return;
-
-        var href = link.getAttribute('href');
-        if (!href) return;
-
-        // Skip: external, mailto, tel, target="_blank", anchor-only, modifier keys
-        if (link.target === '_blank' ||
-            link.hasAttribute('download') ||
-            href.startsWith('mailto:') ||
-            href.startsWith('tel:') ||
-            href.startsWith('#') ||
-            href.startsWith('http') ||
-            e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) {
-            return;
-        }
-
-        e.preventDefault();
-        document.body.classList.add('page-leaving');
-        setTimeout(function() {
-            window.location.href = href;
-        }, 180);
     });
 
     // ── Scroll Reveal ─────────────────────────────────────────────────────

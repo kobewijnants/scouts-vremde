@@ -123,11 +123,6 @@ footer {
     opacity: 1;
 }
 
-.page-leaving main,
-.page-leaving footer {
-    opacity: 0;
-}
-
 /* ==========================================================================
    Active Nav Link — animated underline
    ========================================================================== */
