@@ -5,7 +5,10 @@
 
 (function() {
     // ── Page Fade-In ──────────────────────────────────────────────────────
-    document.addEventListener('DOMContentLoaded', function() {
+    // Use pageshow instead of DOMContentLoaded so it also fires on
+    // back/forward navigation (bfcache restore)
+    window.addEventListener('pageshow', function() {
+        document.body.classList.remove('page-leaving');
         document.body.classList.add('page-loaded');
         initScrollReveal();
     });
