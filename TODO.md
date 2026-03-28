@@ -110,9 +110,5 @@
 
 ## Kabouter leiding toevoegen
 
-Trix Slaets - Sarabi - 046851645
-Flobe Van der Voort - Pedro - 0478683203
-Marie Pruuost - Shenzi - 0460975829
-Danae Notredame - Tati - 0471698512
-Floor Wuyts - Eshe - 0471321150
-Gina Van Cleemput - Azizi - 0468085448
+- [x] Kabouter leiding toegevoegd (Trix, Flobe, Marie, Danae, Floor, Gina)
+- [x] Trix Slaets telefoonnummer gecorrigeerd naar 0468516456
