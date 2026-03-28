@@ -1,10 +1,10 @@
 # TODO
 
-## foto lio
+## ~~foto lio~~ (done)
 
 ## zie bericht seppe
 
-## jin foto zie jarne
+## ~~jin foto zie jarne~~ (done)
 
 ## Inschrijvingen?
 
