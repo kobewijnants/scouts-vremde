@@ -100,9 +100,9 @@
 
 ## Animations
 
-- [ ] **Scroll reveal animations** – Fade/slide elements in as they enter the viewport (hero text, cards, sections)
-- [ ] **Hover interactions** – Richer hover effects on cards, buttons, and links (scale, color shifts, icon movement)
-- [ ] **Page transitions** – Smooth transitions when navigating between pages
+- [x] **Scroll reveal animations** – Fade/slide elements in as they enter the viewport (hero text, cards, sections)
+- [x] **Hover interactions** – Richer hover effects on cards, buttons, and links (scale, color shifts, icon movement)
+- [x] **Page transitions** – Smooth transitions when navigating between pages
 
 ---
 

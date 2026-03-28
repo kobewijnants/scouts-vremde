@@ -3,9 +3,9 @@ var menuBtn = document.getElementById('mobile-menu-btn');
 var mobileMenu = document.getElementById('mobile-menu');
 if (menuBtn) {
     menuBtn.addEventListener('click', function() {
-        var isHidden = mobileMenu.classList.toggle('hidden');
-        menuBtn.setAttribute('aria-expanded', !isHidden);
-        menuBtn.setAttribute('aria-label', isHidden ? 'Menu openen' : 'Menu sluiten');
+        var isOpen = mobileMenu.classList.toggle('menu-open');
+        menuBtn.setAttribute('aria-expanded', isOpen);
+        menuBtn.setAttribute('aria-label', isOpen ? 'Menu sluiten' : 'Menu openen');
     });
 }
 
@@ -14,16 +14,16 @@ var infoBtn = document.getElementById('mobile-info-btn');
 var mobileInfoMenu = document.getElementById('mobile-info-menu');
 if (infoBtn) {
     infoBtn.addEventListener('click', function() {
-        var isHidden = mobileInfoMenu.classList.toggle('hidden');
-        infoBtn.setAttribute('aria-expanded', !isHidden);
+        var isOpen = mobileInfoMenu.classList.toggle('submenu-open');
+        infoBtn.setAttribute('aria-expanded', isOpen);
     });
 }
 
 // Escape key closes mobile menu and desktop dropdown
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
-        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.add('hidden');
+        if (mobileMenu && mobileMenu.classList.contains('menu-open')) {
+            mobileMenu.classList.remove('menu-open');
             menuBtn.setAttribute('aria-expanded', 'false');
             menuBtn.setAttribute('aria-label', 'Menu openen');
             menuBtn.focus();

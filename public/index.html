@@ -65,9 +65,9 @@
         </p>
         <div class="flex flex-wrap gap-4">
           <a href="/janneman"
-             class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2">
+             class="group bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2">
             Janneman
-            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" aria-hidden="true">arrow_forward</span>
           </a>
           <a href="/takken"
              class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-surface-container-highest transition-all">
@@ -85,17 +85,17 @@
           <p class="text-on-surface-variant max-w-md">Blijf op de hoogte van onze laatste nieuwtjes, evenementen en
             weetjes!</p>
         </div>
-        <div id="wjd-cards" class="cms-editable grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="rounded-xl bg-surface-container p-8">
+        <div id="wjd-cards" class="cms-editable grid grid-cols-1 md:grid-cols-3 gap-6" data-stagger-group>
+          <div class="reveal rounded-xl bg-surface-container p-8">
             <h3 class="text-xl font-bold text-primary mb-3 font-headline">Vernieuwde website</h3>
             <p class="text-on-surface-variant text-sm leading-relaxed">Wist je dat we een vernieuwde website hebben?</p>
           </div>
-          <div class="rounded-xl bg-surface-container p-8">
+          <div class="reveal rounded-xl bg-surface-container p-8">
             <h3 class="text-xl font-bold text-primary mb-3 font-headline">Spaghettiavond</h3>
             <p class="text-on-surface-variant text-sm leading-relaxed">Wist je dat de givers op 25 april een super leuke
               spaghettiavond organiseren?</p>
           </div>
-          <div class="rounded-xl bg-surface-container p-8">
+          <div class="reveal rounded-xl bg-surface-container p-8">
             <h3 class="text-xl font-bold text-primary mb-3 font-headline">Groepsdag</h3>
             <p class="text-on-surface-variant text-sm leading-relaxed">Wist je dat we op 9 mei met heel de scouts naar
               zee gaan?</p>
@@ -117,8 +117,8 @@
             <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" aria-hidden="true">arrow_forward</span>
           </a>
         </div>
-        <div id="events-cards" class="cms-editable lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
-          <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+        <div id="events-cards" class="cms-editable lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-4 w-full" data-stagger-group>
+          <div class="reveal bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div
                  class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-4">
               <span class="material-symbols-outlined" aria-hidden="true">restaurant</span></div>
@@ -129,7 +129,7 @@
                   class="text-xs bg-secondary-container px-2 py-1 rounded text-on-secondary-container font-bold">Iedereen welkom</span>
           </div>
           <!-- Event: IJssalon Jong-Gidsen -->
-          <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="reveal bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div
                  class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-4">
               <span class="material-symbols-outlined" aria-hidden="true">icecream</span></div>
@@ -139,7 +139,7 @@
             <span class="text-xs bg-secondary-container px-2 py-1 rounded text-on-secondary-container font-bold">Iedereen welkom</span>
           </div>
           <!-- Event 2: Groepsdag -->
-          <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="reveal bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div
                  class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed mb-4">
               <span class="material-symbols-outlined" aria-hidden="true">groups</span></div>
@@ -156,7 +156,7 @@
     <!-- Newsletter / Community Section -->
     <section class="py-12 md:py-24 px-8">
       <div
-           class="max-w-5xl mx-auto rounded-[3rem] bg-primary text-on-primary p-6 md:p-12 lg:p-20 relative overflow-hidden text-center">
+           class="reveal max-w-5xl mx-auto rounded-[3rem] bg-primary text-on-primary p-6 md:p-12 lg:p-20 relative overflow-hidden text-center">
         <div class="absolute top-0 right-0 p-12 opacity-10">
           <span class="material-symbols-outlined text-[6rem] md:text-[10rem]" aria-hidden="true"
                 style="font-variation-settings: &apos;FILL&apos; 1;">explore</span>

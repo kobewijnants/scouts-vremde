@@ -45,3 +45,119 @@ main {
 .asymmetric-clip {
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
 }
+
+/* ==========================================================================
+   Scroll Reveal Animations
+   ========================================================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-24px);
+    transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(24px);
+    transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.revealed,
+.reveal-left.revealed,
+.reveal-right.revealed {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* ==========================================================================
+   Mobile Nav Transition
+   ========================================================================== */
+
+#mobile-menu {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.25s ease;
+}
+
+#mobile-menu.menu-open {
+    max-height: 480px;
+    opacity: 1;
+}
+
+#mobile-info-menu {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.2s ease;
+}
+
+#mobile-info-menu.submenu-open {
+    max-height: 320px;
+    opacity: 1;
+}
+
+/* ==========================================================================
+   Page Transitions
+   ========================================================================== */
+
+body {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+body.page-loaded {
+    opacity: 1;
+}
+
+body.page-leaving {
+    opacity: 0;
+}
+
+/* ==========================================================================
+   Reduced Motion & No-JS Fallbacks
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal-left,
+    .reveal-right {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    body {
+        opacity: 1;
+        transition: none;
+    }
+
+    #mobile-menu,
+    #mobile-info-menu {
+        transition: none;
+    }
+}
+
+@media (scripting: none) {
+    body {
+        opacity: 1;
+    }
+
+    .reveal,
+    .reveal-left,
+    .reveal-right {
+        opacity: 1;
+        transform: none;
+    }
+}
