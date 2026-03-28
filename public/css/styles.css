@@ -109,21 +109,6 @@ main {
 }
 
 /* ==========================================================================
-   Page Transitions (main + footer only, nav stays visible)
-   ========================================================================== */
-
-main,
-footer {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.page-loaded main,
-.page-loaded footer {
-    opacity: 1;
-}
-
-/* ==========================================================================
    Active Nav Link — animated underline
    ========================================================================== */
 
@@ -165,12 +150,6 @@ footer {
         transition: none;
     }
 
-    main,
-    footer {
-        opacity: 1;
-        transition: none;
-    }
-
     .nav-link-active::after {
         animation: none;
     }
@@ -182,11 +161,6 @@ footer {
 }
 
 @media (scripting: none) {
-    main,
-    footer {
-        opacity: 1;
-    }
-
     .reveal,
     .reveal-left,
     .reveal-right {

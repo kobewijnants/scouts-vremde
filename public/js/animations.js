@@ -4,11 +4,8 @@
 // ==========================================================================
 
 (function() {
-    // ── Page Fade-In ──────────────────────────────────────────────────────
-    // Use pageshow instead of DOMContentLoaded so it also fires on
-    // back/forward navigation (bfcache restore)
+    // ── Init on page load (pageshow also fires on bfcache restore) ──────
     window.addEventListener('pageshow', function() {
-        document.body.classList.add('page-loaded');
         initScrollReveal();
     });
 
