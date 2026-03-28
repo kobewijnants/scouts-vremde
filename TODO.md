@@ -81,20 +81,20 @@
 
 ## UX
 
-- [ ] **Fix `href="#"` dead link on Kapoenen CTA** – "Schrijf nu in" does nothing; should link to `/contact`
-- [ ] **Add Info sub-pages to the footer** – Scouting, Subsidies, Uniform, etc. are only in the nav dropdown
-- [ ] **Fix empty Kabouters janneman section** – Contains only blank `<p>` tags
-- [ ] **Standardize janneman content format** – Currently a mix of images, plain text, blank sections, and PNG screenshots
+- [x] **Fix `href="#"` dead link on Kapoenen CTA** – Now links to `/contact`
+- [x] **Add Info sub-pages to the footer** – Added Scouting, Nieuwe leden, Uniform, Subsidies, Scouting op maat
+- [x] **Fix empty Kabouters janneman section** – Now uses uploaded janneman images
+- [x] **Standardize janneman content format** – All tak pages now use consistent webp image format
 
 ---
 
 ## UI / Code Quality
 
-- [ ] **Add `<html class="light">` consistently** – Only on index.html currently
-- [ ] **Standardize `body` class tokens** – Some pages use `bg-background`, others `bg-surface` (same value, inconsistent semantics)
-- [ ] **Add `antialiased` to all pages** – Only on janneman.html currently
-- [ ] **Add `selection:` classes to janneman.html body** – Missing text selection styling
-- [ ] **Fix hero alt text** – Currently AI-generated generic descriptions that don't match actual image content
+- [x] **Add `<html class="light">` consistently** – Added to all 24 pages
+- [x] **Standardize `body` class tokens** – All pages now use `bg-surface text-on-surface`
+- [x] **Add `antialiased` to all pages** – Added to all 24 pages
+- [x] **Add `selection:` classes consistently** – Added to janneman.html and takken.html
+- [x] **Fix hero alt text** – Rewritten based on actual image content for all 10 hero images
 
 ---
 
