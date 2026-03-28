@@ -107,3 +107,12 @@
 ## Missing headers (on test site)
 
 - Verify security headers are being served (HSTS, CSP, X-Frame-Options, etc.)
+
+## Kabouter leiding toevoegen
+
+Trix Slaets - Sarabi - 046851645
+Flobe Van der Voort - Pedro - 0478683203
+Marie Pruuost - Shenzi - 0460975829
+Danae Notredame - Tati - 0471698512
+Floor Wuyts - Eshe - 0471321150
+Gina Van Cleemput - Azizi - 0468085448
