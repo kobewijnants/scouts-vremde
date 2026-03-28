@@ -109,6 +109,46 @@ main {
 }
 
 /* ==========================================================================
+   Page Transitions (View Transitions API)
+   ========================================================================== */
+
+@view-transition {
+    navigation: auto;
+}
+
+/* Keep nav fixed in place during transition */
+nav {
+    view-transition-name: nav;
+}
+
+::view-transition-group(nav) {
+    animation: none;
+}
+
+/* Content slides out left, new content slides in from right */
+::view-transition-old(root) {
+    animation: slide-out-left 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+::view-transition-new(root) {
+    animation: slide-in-right 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slide-out-left {
+    to {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+}
+
+/* ==========================================================================
    Active Nav Link — animated underline
    ========================================================================== */
 
@@ -148,6 +188,11 @@ main {
         opacity: 1;
         transform: none;
         transition: none;
+    }
+
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+        animation: none;
     }
 
     .nav-link-active::after {
