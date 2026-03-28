@@ -166,7 +166,7 @@
              class="cms-editable bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold flex items-center gap-2 hover:shadow-lg transition-all"
              href="../uploads/janneman/janneman%20april26_merged_compressed.pdf" target="_blank" rel="noopener"><span
                   class="material-symbols-outlined">open_in_new</span> Open de janneman</a>
-          <button onclick="togglePdfViewer()" id="toggle-pdf-btn"
+          <button id="toggle-pdf-btn"
                   class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-headline font-bold flex items-center gap-2 hover:bg-surface-container-highest transition-all">
             <span class="material-symbols-outlined">visibility</span>
             Bekijk hier
@@ -183,29 +183,7 @@
 
   <!--#include virtual="/includes/footer.html" -->
 
-  <script>
-    function togglePdfViewer() {
-      var viewer = document.getElementById('pdf-viewer');
-      var iframe = document.getElementById('janneman-iframe');
-      var btn = document.getElementById('toggle-pdf-btn');
-      var link = document.getElementById('janneman-download');
-      var pdfUrl = link.getAttribute('href');
-      if (viewer.classList.contains('hidden')) {
-        iframe.src = pdfUrl;
-        viewer.classList.remove('hidden');
-        btn.innerHTML = '<span class="material-symbols-outlined">visibility_off</span> Verberg';
-        viewer.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      } else {
-        viewer.classList.add('hidden');
-        iframe.src = '';
-        btn.innerHTML = '<span class="material-symbols-outlined">visibility</span> Bekijk hier';
-      }
-    }
-
-  </script>
+  <script src="../js/janneman.js"></script>
 
 
 </body>

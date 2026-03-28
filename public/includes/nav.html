@@ -25,7 +25,7 @@
             <a class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="/contact" data-page="contact">Contact</a>
             <a class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="/verhuur" data-page="verhuur">Verhuur</a>
         </div>
-        <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden ml-auto p-2 text-[#5a2e00]">
+        <button id="mobile-menu-btn" class="md:hidden ml-auto p-2 text-[#5a2e00]">
             <span class="material-symbols-outlined text-3xl">menu</span>
         </button>
     </div>
@@ -35,7 +35,7 @@
             <a class="nav-link text-[#1c1c16] opacity-80 py-2" href="/takken" data-page="takken">Takken</a>
             <a class="nav-link text-[#1c1c16] opacity-80 py-2" href="/janneman" data-page="janneman">Janneman</a>
             <div>
-                <button onclick="document.getElementById('mobile-info-menu').classList.toggle('hidden')" class="text-[#1c1c16] opacity-80 py-2 flex items-center gap-1 w-full">
+                <button id="mobile-info-btn" class="text-[#1c1c16] opacity-80 py-2 flex items-center gap-1 w-full">
                     Info
                     <span class="material-symbols-outlined text-sm">expand_more</span>
                 </button>
@@ -54,25 +54,4 @@
         </div>
     </div>
 </nav>
-<script>
-(function() {
-    var path = window.location.pathname;
-    var activePage = 'index';
-    var infoPages = ['scouting','subsidies','uniform','nieuwe-leden','rvb','verloren-voorwerpen','scouting-op-maat'];
-    var segments = path.split('/').filter(Boolean);
-    if (segments.length > 0) {
-        var page = segments[segments.length - 1].replace('.html', '');
-        if (['takken','janneman','contact','verhuur'].indexOf(page) !== -1) activePage = page;
-        else if (page.startsWith('tak-')) activePage = 'takken';
-        else if (infoPages.indexOf(page) !== -1) activePage = 'info';
-    }
-    document.querySelectorAll('.nav-link').forEach(function(link) {
-        if (link.dataset.page === activePage) {
-            if (link.closest('.hidden.md\\:flex') || link.closest('[class*="md:flex"]'))
-                link.className = 'nav-link text-[#3b6934] border-b-2 border-[#3b6934] pb-1';
-            if (link.closest('#mobile-menu'))
-                link.className = 'nav-link text-[#3b6934] py-2';
-        }
-    });
-})();
-</script>
+<script src="/js/nav.js"></script>
