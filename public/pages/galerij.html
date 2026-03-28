@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="light" lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Galerij - Scouts Vremde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="../js/tailwind.config.js"></script>
+    <link href="../css/styles.css" rel="stylesheet" />
+    <meta name="description" content="Bekijk fotoalbums van activiteiten, kampen en evenementen van Scouts Vremde.">
+    <meta property="og:title" content="Galerij - Scouts Vremde">
+    <meta property="og:description" content="Bekijk fotoalbums van activiteiten, kampen en evenementen van Scouts Vremde.">
+    <meta property="og:image" content="<!--#echo var="SITE_URL" -->/img/homepage.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<!--#echo var="SITE_URL" -->/galerij">
+    <link rel="canonical" href="<!--#echo var="SITE_URL" -->/galerij">
+</head>
+<body class="antialiased bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+
+    <!--#include virtual="/includes/nav.html" -->
+
+    <main class="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
+        <header class="mb-16 md:mb-24">
+            <span class="bg-secondary-fixed text-on-secondary-fixed-variant px-3 py-1 rounded-md text-xs font-bold uppercase tracking-widest mb-4 inline-block">Foto's</span>
+            <h1 class="text-3xl sm:text-5xl md:text-7xl font-headline font-extrabold text-primary tracking-tighter mb-6 leading-tight">
+                Onze <span class="text-secondary italic">avonturen</span>
+            </h1>
+            <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                Herleef de leukste momenten van onze activiteiten, kampen en evenementen.
+            </p>
+        </header>
+
+        <section data-stagger-group class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Album card template — duplicate and fill in for each album -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="reveal group bg-surface-container-low rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+                <div class="aspect-[4/3] bg-surface-container flex items-center justify-center">
+                    <!-- Replace with: <img src="../img/galerij/album-name.webp" alt="Album beschrijving" class="w-full h-full object-cover" loading="lazy"> -->
+                    <span class="material-symbols-outlined text-6xl text-on-surface-variant/30" aria-hidden="true">photo_library</span>
+                </div>
+                <div class="p-5 flex items-center justify-between">
+                    <div>
+                        <h2 class="font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Kamp 2025</h2>
+                        <p class="text-sm text-on-surface-variant mt-1">Zomer 2025</p>
+                    </div>
+                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors" aria-hidden="true">open_in_new</span>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" class="reveal group bg-surface-container-low rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+                <div class="aspect-[4/3] bg-surface-container flex items-center justify-center">
+                    <span class="material-symbols-outlined text-6xl text-on-surface-variant/30" aria-hidden="true">photo_library</span>
+                </div>
+                <div class="p-5 flex items-center justify-between">
+                    <div>
+                        <h2 class="font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Fuif</h2>
+                        <p class="text-sm text-on-surface-variant mt-1">Maart 2025</p>
+                    </div>
+                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors" aria-hidden="true">open_in_new</span>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" class="reveal group bg-surface-container-low rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+                <div class="aspect-[4/3] bg-surface-container flex items-center justify-center">
+                    <span class="material-symbols-outlined text-6xl text-on-surface-variant/30" aria-hidden="true">photo_library</span>
+                </div>
+                <div class="p-5 flex items-center justify-between">
+                    <div>
+                        <h2 class="font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Startdag</h2>
+                        <p class="text-sm text-on-surface-variant mt-1">September 2024</p>
+                    </div>
+                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors" aria-hidden="true">open_in_new</span>
+                </div>
+            </a>
+
+        </section>
+    </main>
+
+    <!--#include virtual="/includes/footer.html" -->
+
+</body>
+</html>
