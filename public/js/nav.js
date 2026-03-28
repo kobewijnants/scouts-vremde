@@ -1,18 +1,41 @@
 // Mobile menu toggle
 var menuBtn = document.getElementById('mobile-menu-btn');
+var mobileMenu = document.getElementById('mobile-menu');
 if (menuBtn) {
     menuBtn.addEventListener('click', function() {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
+        var isHidden = mobileMenu.classList.toggle('hidden');
+        menuBtn.setAttribute('aria-expanded', !isHidden);
+        menuBtn.setAttribute('aria-label', isHidden ? 'Menu openen' : 'Menu sluiten');
     });
 }
 
 // Mobile info submenu toggle
 var infoBtn = document.getElementById('mobile-info-btn');
+var mobileInfoMenu = document.getElementById('mobile-info-menu');
 if (infoBtn) {
     infoBtn.addEventListener('click', function() {
-        document.getElementById('mobile-info-menu').classList.toggle('hidden');
+        var isHidden = mobileInfoMenu.classList.toggle('hidden');
+        infoBtn.setAttribute('aria-expanded', !isHidden);
     });
 }
+
+// Escape key closes mobile menu and desktop dropdown
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+            menuBtn.setAttribute('aria-label', 'Menu openen');
+            menuBtn.focus();
+        }
+        // Blur desktop info dropdown if focused within
+        var desktopInfoBtn = document.getElementById('desktop-info-btn');
+        if (desktopInfoBtn && desktopInfoBtn.closest('.group').contains(document.activeElement)) {
+            desktopInfoBtn.focus();
+            desktopInfoBtn.blur();
+        }
+    }
+});
 
 // Fill in current year
 document.querySelectorAll('.current-year').forEach(function(el) {

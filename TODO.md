@@ -69,13 +69,13 @@
 
 ## Accessibility
 
-- [ ] **Make desktop "Info" dropdown keyboard-accessible** – Currently hover-only, invisible to keyboard/screen reader users (add `:focus-within` or JS)
-- [ ] **Add `aria-label` and `aria-expanded` to mobile hamburger button** – Screen readers currently announce a nameless button
-- [ ] **Add `aria-hidden="true"` to decorative Material Symbol icons** – Icons like `arrow_forward` in links get read aloud
-- [ ] **Fix low-contrast "Totem wordt aangevuld" text** – `text-secondary/50` likely fails WCAG AA
-- [ ] **Fix low-contrast footer copyright text** – `text-[#ffb273]/40` on dark background
-- [ ] **Fix heading hierarchy** – h2→h5 jump on index.html, h1→h3 on contact.html
-- [ ] **Add `Escape` key handler to close mobile menu**
+- [x] **Make desktop "Info" dropdown keyboard-accessible** – Added `group-focus-within` classes for keyboard access
+- [x] **Add `aria-label` and `aria-expanded` to mobile hamburger button** – Dynamic aria-expanded + label updates in nav.js
+- [x] **Add `aria-hidden="true"` to decorative Material Symbol icons** – 162 icons updated across 23 files
+- [x] **Fix low-contrast "Totem wordt aangevuld" text** – Changed from `text-secondary/50` to `text-on-surface-variant`
+- [x] **Fix low-contrast footer copyright text** – Changed from `/40` to `/70` opacity
+- [x] **Fix heading hierarchy** – h5→h3 on index.html events, h3→h2 on contact.html groepsleiding
+- [x] **Add `Escape` key handler to close mobile menu** – Closes menu and returns focus to hamburger button
 
 ---
 

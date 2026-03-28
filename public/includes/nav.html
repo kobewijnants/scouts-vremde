@@ -1,4 +1,4 @@
-<nav class="fixed top-0 w-full z-50 bg-[#fdf9ef]/80 backdrop-blur-md">
+<nav class="fixed top-0 w-full z-50 bg-[#fdf9ef]/80 backdrop-blur-md" aria-label="Hoofdnavigatie">
     <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-16">
         <a href="/" class="text-2xl font-extrabold text-[#5a2e00] font-headline tracking-tight">Scouts Vremde</a>
         <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
@@ -6,11 +6,11 @@
             <a class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="/takken" data-page="takken">Takken</a>
             <a class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="/janneman" data-page="janneman">Janneman</a>
             <div class="relative group">
-                <button class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200 flex items-center gap-1" data-page="info">
+                <button class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200 flex items-center gap-1" data-page="info" aria-expanded="false" aria-haspopup="true" id="desktop-info-btn">
                     Info
-                    <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span>
+                    <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180 group-focus-within:rotate-180" aria-hidden="true">expand_more</span>
                 </button>
-                <div class="absolute top-full -left-4 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div class="absolute top-full -left-4 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200">
                     <div class="bg-[#fdf9ef]/95 backdrop-blur-md rounded-xl py-2 min-w-[200px] shadow-lg shadow-[#1c1c16]/5">
                         <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="/scouting">Scouting</a>
                         <a class="block px-5 py-2.5 text-sm text-[#1c1c16] opacity-80 hover:text-[#5a2e00] hover:bg-[#5a2e00]/5 transition-colors" href="/subsidies">Subsidies</a>
@@ -25,8 +25,8 @@
             <a class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="/contact" data-page="contact">Contact</a>
             <a class="nav-link text-[#1c1c16] opacity-80 hover:text-[#5a2e00] transition-colors duration-200" href="/verhuur" data-page="verhuur">Verhuur</a>
         </div>
-        <button id="mobile-menu-btn" class="md:hidden ml-auto p-2 text-[#5a2e00]">
-            <span class="material-symbols-outlined text-3xl">menu</span>
+        <button id="mobile-menu-btn" class="md:hidden ml-auto p-2 text-[#5a2e00]" aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="material-symbols-outlined text-3xl" aria-hidden="true">menu</span>
         </button>
     </div>
     <div id="mobile-menu" class="hidden md:hidden bg-[#fdf9ef]/95 backdrop-blur-md border-t border-[#5a2e00]/10">
@@ -35,9 +35,9 @@
             <a class="nav-link text-[#1c1c16] opacity-80 py-2" href="/takken" data-page="takken">Takken</a>
             <a class="nav-link text-[#1c1c16] opacity-80 py-2" href="/janneman" data-page="janneman">Janneman</a>
             <div>
-                <button id="mobile-info-btn" class="text-[#1c1c16] opacity-80 py-2 flex items-center gap-1 w-full">
+                <button id="mobile-info-btn" class="text-[#1c1c16] opacity-80 py-2 flex items-center gap-1 w-full" aria-expanded="false" aria-controls="mobile-info-menu">
                     Info
-                    <span class="material-symbols-outlined text-sm">expand_more</span>
+                    <span class="material-symbols-outlined text-sm" aria-hidden="true">expand_more</span>
                 </button>
                 <div id="mobile-info-menu" class="hidden pl-4 flex flex-col gap-3 pb-2">
                     <a class="text-[#1c1c16] opacity-70 text-sm py-1" href="/scouting">Scouting</a>
