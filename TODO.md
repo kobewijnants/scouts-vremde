@@ -98,6 +98,14 @@
 
 ---
 
+## Animations
+
+- [ ] **Scroll reveal animations** – Fade/slide elements in as they enter the viewport (hero text, cards, sections)
+- [ ] **Hover interactions** – Richer hover effects on cards, buttons, and links (scale, color shifts, icon movement)
+- [ ] **Page transitions** – Smooth transitions when navigating between pages
+
+---
+
 ## SSL grade
 
 - Disable TLS 1.0 and 1.1, set preferred for 1.2
