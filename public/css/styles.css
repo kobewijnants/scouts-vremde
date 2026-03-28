@@ -90,6 +90,10 @@ main {
                 opacity 0.25s ease;
 }
 
+#mobile-menu[hidden] {
+    display: none;
+}
+
 #mobile-menu.menu-open {
     max-height: 480px;
     opacity: 1;

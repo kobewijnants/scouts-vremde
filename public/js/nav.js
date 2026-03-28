@@ -3,7 +3,21 @@ var menuBtn = document.getElementById('mobile-menu-btn');
 var mobileMenu = document.getElementById('mobile-menu');
 if (menuBtn) {
     menuBtn.addEventListener('click', function() {
-        var isOpen = mobileMenu.classList.toggle('menu-open');
+        var isOpen = !mobileMenu.classList.contains('menu-open');
+        if (isOpen) {
+            mobileMenu.removeAttribute('hidden');
+            requestAnimationFrame(function() {
+                mobileMenu.classList.add('menu-open');
+            });
+        } else {
+            mobileMenu.classList.remove('menu-open');
+            mobileMenu.addEventListener('transitionend', function handler() {
+                if (!mobileMenu.classList.contains('menu-open')) {
+                    mobileMenu.setAttribute('hidden', '');
+                }
+                mobileMenu.removeEventListener('transitionend', handler);
+            });
+        }
         menuBtn.setAttribute('aria-expanded', isOpen);
         menuBtn.setAttribute('aria-label', isOpen ? 'Menu sluiten' : 'Menu openen');
     });
@@ -24,6 +38,12 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         if (mobileMenu && mobileMenu.classList.contains('menu-open')) {
             mobileMenu.classList.remove('menu-open');
+            mobileMenu.addEventListener('transitionend', function handler() {
+                if (!mobileMenu.classList.contains('menu-open')) {
+                    mobileMenu.setAttribute('hidden', '');
+                }
+                mobileMenu.removeEventListener('transitionend', handler);
+            });
             menuBtn.setAttribute('aria-expanded', 'false');
             menuBtn.setAttribute('aria-label', 'Menu openen');
             menuBtn.focus();
