@@ -109,20 +109,52 @@ main {
 }
 
 /* ==========================================================================
-   Page Transitions
+   Page Transitions (main + footer only, nav stays visible)
    ========================================================================== */
 
-body {
+main,
+footer {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-body.page-loaded {
+.page-loaded main,
+.page-loaded footer {
     opacity: 1;
 }
 
-body.page-leaving {
+.page-leaving main,
+.page-leaving footer {
     opacity: 0;
+}
+
+/* ==========================================================================
+   Active Nav Link — animated underline
+   ========================================================================== */
+
+.nav-link-active {
+    color: #3b6934;
+    position: relative;
+}
+
+.nav-link-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+    background: #3b6934;
+    animation: underline-in 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes underline-in {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
 }
 
 /* ==========================================================================
@@ -138,9 +170,14 @@ body.page-leaving {
         transition: none;
     }
 
-    body {
+    main,
+    footer {
         opacity: 1;
         transition: none;
+    }
+
+    .nav-link-active::after {
+        animation: none;
     }
 
     #mobile-menu,
@@ -150,7 +187,8 @@ body.page-leaving {
 }
 
 @media (scripting: none) {
-    body {
+    main,
+    footer {
         opacity: 1;
     }
 

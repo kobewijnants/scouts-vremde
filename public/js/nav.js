@@ -56,10 +56,9 @@ document.querySelectorAll('.current-year').forEach(function(el) {
     }
     document.querySelectorAll('.nav-link').forEach(function(link) {
         if (link.dataset.page === activePage) {
-            if (link.closest('.hidden.md\\:flex') || link.closest('[class*="md:flex"]'))
-                link.className = 'nav-link text-[#3b6934] border-b-2 border-[#3b6934] pb-1';
+            link.classList.add('nav-link-active');
             if (link.closest('#mobile-menu'))
-                link.className = 'nav-link text-[#3b6934] py-2';
+                link.className = 'nav-link nav-link-active py-2';
         }
     });
 })();
