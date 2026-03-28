@@ -4,19 +4,23 @@ var mobileMenu = document.getElementById('mobile-menu');
 if (menuBtn) {
     menuBtn.addEventListener('click', function() {
         var isOpen = !mobileMenu.classList.contains('menu-open');
+        var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         if (isOpen) {
             mobileMenu.removeAttribute('hidden');
-            requestAnimationFrame(function() {
-                mobileMenu.classList.add('menu-open');
-            });
+            void mobileMenu.offsetHeight; // force reflow so CSS transition fires correctly
+            mobileMenu.classList.add('menu-open');
         } else {
             mobileMenu.classList.remove('menu-open');
-            mobileMenu.addEventListener('transitionend', function handler() {
-                if (!mobileMenu.classList.contains('menu-open')) {
-                    mobileMenu.setAttribute('hidden', '');
-                }
-                mobileMenu.removeEventListener('transitionend', handler);
-            });
+            if (reducedMotion) {
+                mobileMenu.setAttribute('hidden', '');
+            } else {
+                mobileMenu.addEventListener('transitionend', function handler() {
+                    if (!mobileMenu.classList.contains('menu-open')) {
+                        mobileMenu.setAttribute('hidden', '');
+                    }
+                    mobileMenu.removeEventListener('transitionend', handler);
+                });
+            }
         }
         menuBtn.setAttribute('aria-expanded', isOpen);
         menuBtn.setAttribute('aria-label', isOpen ? 'Menu sluiten' : 'Menu openen');
@@ -38,12 +42,16 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         if (mobileMenu && mobileMenu.classList.contains('menu-open')) {
             mobileMenu.classList.remove('menu-open');
-            mobileMenu.addEventListener('transitionend', function handler() {
-                if (!mobileMenu.classList.contains('menu-open')) {
-                    mobileMenu.setAttribute('hidden', '');
-                }
-                mobileMenu.removeEventListener('transitionend', handler);
-            });
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                mobileMenu.setAttribute('hidden', '');
+            } else {
+                mobileMenu.addEventListener('transitionend', function handler() {
+                    if (!mobileMenu.classList.contains('menu-open')) {
+                        mobileMenu.setAttribute('hidden', '');
+                    }
+                    mobileMenu.removeEventListener('transitionend', handler);
+                });
+            }
             menuBtn.setAttribute('aria-expanded', 'false');
             menuBtn.setAttribute('aria-label', 'Menu openen');
             menuBtn.focus();
