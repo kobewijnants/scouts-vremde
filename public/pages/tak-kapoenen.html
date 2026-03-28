@@ -16,6 +16,7 @@
   <meta property="og:image" content>
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://scoutsvremde.kobecloud.be/pages/tak-kapoenen.html">
+    <link rel="preload" as="image" type="image/webp" href="/img/kapoenen/kapoenen.webp">
 </head>
 <body
       class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
@@ -26,7 +27,7 @@
     <!-- Hero Section -->
     <section class="relative h-[400px] md:h-[614px] flex items-center overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img class="w-full h-full object-cover" alt="Mistig dennenbos bij dageraad met zachte zonnestralen"
+        <img fetchpriority="high" class="w-full h-full object-cover" alt="Mistig dennenbos bij dageraad met zachte zonnestralen"
              src="../img/kapoenen/kapoenen.webp">
         <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent"></div>
       </div>
