@@ -95,7 +95,7 @@ main {
 }
 
 #mobile-menu.menu-open {
-    max-height: 480px;
+    max-height: 1000px;
     opacity: 1;
 }
 
