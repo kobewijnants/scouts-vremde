@@ -3,7 +3,7 @@
 # ============================================================
 
 # Site URL (change this when switching domains)
-SetEnv SITE_URL https://scoutsvremde.kobecloud.be
+SetEnv SITE_URL https://www.scoutsvremde.be
 
 # Disable directory listing
 Options -Indexes +Includes
@@ -34,7 +34,8 @@ AddOutputFilter INCLUDES .html
 # Hide Apache version info
 ServerSignature Off
 
-# Note: HTTPS redirect is handled by the reverse proxy, not here
+# Note: apex/HTTP -> https://www. redirect is handled by the Apache vhost
+# config (root-owned, outside this repo), not here
 
 # Security headers
 <IfModule mod_headers.c>
