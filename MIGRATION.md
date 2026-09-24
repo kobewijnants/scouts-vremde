@@ -63,8 +63,25 @@ Every deploy after the initial migration is just:
 ~/scouts-vremde/scripts/deploy.sh
 ```
 
-which does `git fetch && git reset --hard origin/main`, then
-`rsync -a --delete` from `public/` into `~/public_html/`.
+which first runs `scripts/sync-cms.sh` (below) to capture and push any
+SurrealCMS content edits sitting in `public_html`, then does
+`git fetch && git reset --hard origin/main`, then `rsync -a --delete` from
+`public/` into `~/public_html/`.
+
+### SurrealCMS content sync
+
+SurrealCMS edits `public_html` directly over SFTP, outside git entirely.
+`public_html` is a plain rsync target, not a checkout, so those edits have
+no history and would be silently overwritten by the `rsync --delete` above.
+`scripts/sync-cms.sh` closes that gap: it mirrors `public_html` into the
+`scouts-vremde` checkout, commits the delta, merges in anything new on
+`origin/main`, pushes, then republishes the merged result back to
+`public_html`. `deploy.sh` always runs it first, so a template deploy can't
+clobber pending CMS edits. It can also be run on its own at any time:
+
+```bash
+~/scouts-vremde/scripts/sync-cms.sh
+```
 
 ## 3. Before you start: update `SITE_URL` and check the manual edit
 

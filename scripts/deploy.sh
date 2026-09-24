@@ -17,6 +17,13 @@ PUBLISH_MODE="rsync"          # "rsync" or "none"
 DOCROOT="$HOME/public_html"   # confirmed DocumentRoot for scoutsvremde.be
 # -----------------------------------------------------------------------
 
+# SurrealCMS edits public_html directly, outside git (see sync-cms.sh). The
+# reset+publish below would silently wipe those edits, so capture and push
+# them first - sync-cms.sh exits non-zero (aborting this deploy) if that
+# sync hits a real conflict, rather than risk clobbering unsaved CMS edits.
+echo "==> Syncing any pending SurrealCMS edits before deploying"
+"$REPO_DIR/scripts/sync-cms.sh"
+
 echo "==> Updating checkout in $REPO_DIR"
 cd "$REPO_DIR"
 git fetch origin "$BRANCH"
