@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="light" lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Janneman - Scouts Vremde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="../js/tailwind.config.js"></script>
+  <link href="../css/styles.css" rel="stylesheet">
+  <meta name="description"
+        content="Bekijk de Janneman van Scouts Vremde met alle activiteiten en vergaderingen per tak.">
+  <meta property="og:title" content="Janneman - Scouts Vremde">
+  <meta property="og:description"
+        content="Bekijk de Janneman van Scouts Vremde met alle activiteiten en vergaderingen per tak.">
+  <meta property="og:image" content="https://scoutsvremde.be/img/homepage.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://scoutsvremde.be/janneman">
+  <link rel="canonical" href="https://scoutsvremde.be/janneman">
+</head>
+<body
+      class="bg-surface text-on-surface antialiased font-body selection:bg-secondary-container selection:text-on-secondary-container">
+
+  <!--#include virtual="/includes/nav.html" -->
+
+  <!-- Hero / Header Section -->
+  <header class="pt-32 pb-16 px-8 max-w-7xl mx-auto">
+    <div class="max-w-2xl">
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-primary leading-tight mb-6 font-headline">Janneman
+      </h1>
+      <p class="text-lg text-on-surface-variant leading-relaxed">
+        Alle activiteiten en vergaderingen op een rij. Bekijk de volledige janneman hieronder.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-8 max-w-7xl mx-auto space-y-20">
+    <!-- Evenementen -->
+    <div class="reveal">
+      <div class="flex items-center gap-4 mb-8">
+        <h2 class="text-3xl font-bold text-primary font-headline">Evenementen</h2>
+        <div class="h-[2px] flex-grow bg-outline-variant opacity-20"></div>
+      </div>
+      <div id="evenementen-list" class="cms-editable space-y-4">
+        <div
+             class="group grid grid-cols-1 md:grid-cols-12 items-center bg-surface-container-lowest p-6 rounded-xl gap-6 transition-all duration-300 hover:bg-surface-container-low border border-outline-variant/10 cms-repeatable cms-lock">
+          <div class="md:col-span-2 flex flex-col"><span
+                  class="text-sm font-bold text-on-surface-variant/60 uppercase cms-unlock">Zondag</span> <span
+                  class="text-xl font-extrabold text-primary cms-unlock">27 Sep</span></div>
+          <div class="md:col-span-1 flex justify-center">
+            <div
+                 class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+              <span class="material-symbols-outlined cms-unlock" aria-hidden="true">event</span></div>
+          </div>
+          <div class="md:col-span-9">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+              <h4 class="text-lg font-bold text-on-surface cms-unlock">Overgang</h4>
+              <div class="cms-unlock flex flex-wrap items-center gap-x-4 gap-y-2"> </div>
+            </div>
+            <span
+                  class="text-xs bg-secondary-container px-2 py-1 rounded text-on-secondary-container font-bold mt-1 inline-block cms-unlock">Alle
+              Takken</span>
+          </div>
+        </div>
+        <div
+             class="group grid grid-cols-1 md:grid-cols-12 items-center bg-surface-container-lowest p-6 rounded-xl gap-6 transition-all duration-300 hover:bg-surface-container-low border border-outline-variant/10 cms-repeatable cms-lock">
+          <div class="md:col-span-2 flex flex-col"><span
+                  class="text-sm font-bold text-on-surface-variant/60 uppercase cms-unlock">Zaterdag</span> <span
+                  class="text-xl font-extrabold text-primary cms-unlock">17 Okt</span></div>
+          <div class="md:col-span-1 flex justify-center">
+            <div
+                 class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+              <span class="material-symbols-outlined cms-unlock" aria-hidden="true">event</span></div>
+          </div>
+          <div class="md:col-span-9">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+              <h4 class="text-lg font-bold text-on-surface cms-unlock">Jamboree QUIZ</h4>
+              <hr>
+              <h4 class="text-lg font-bold text-on-surface cms-unlock"> </h4>
+              <div class="cms-unlock flex flex-wrap items-center gap-x-4 gap-y-2"> </div>
+            </div>
+            <span
+                  class="text-xs bg-secondary-container px-2 py-1 rounded text-on-secondary-container font-bold mt-1 inline-block cms-unlock">Iedereen
+              welkom</span>
+          </div>
+        </div>
+        <!-- IJssalon Jong-Gidsen -->
+        <!-- Groepsdag -->
+        <!-- Picknick -->
+        <!-- Bar Plein Air -->
+        <!-- Familiedag + BBQ -->
+      </div>
+    </div>
+
+    <!-- Volledige Janneman Section -->
+    <div class="pb-20 reveal">
+      <div class="flex items-center gap-4 mb-8">
+        <h2 class="text-3xl font-bold text-primary font-headline">Volledige Janneman</h2>
+        <div class="h-[2px] flex-grow bg-outline-variant opacity-20"></div>
+      </div>
+
+      <div class="bg-surface-container-low rounded-2xl p-6 md:p-12">
+        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+          <a id="janneman-download"
+             class="cms-editable bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold flex items-center gap-2 hover:shadow-lg transition-all"
+             href="../uploads/janneman/algemeen/janneman%20mei%20juni%2026.pdf" target="_blank" rel="noopener"><span
+                  class="material-symbols-outlined">open_in_new</span> Open de janneman</a>
+          <button id="toggle-pdf-btn"
+                  class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-headline font-bold flex items-center gap-2 hover:bg-surface-container-highest transition-all">
+            <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
+            Bekijk hier
+          </button>
+        </div>
+
+        <div id="pdf-viewer" class="hidden">
+          <iframe id="janneman-iframe" class="w-full rounded-xl bg-surface-container-highest"
+                  style="height: 80vh; min-height: 400px;" title="Janneman PDF"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--#include virtual="/includes/footer.html" -->
+
+  <script src="../js/janneman.js"></script>
+
+</body>
+</html>
