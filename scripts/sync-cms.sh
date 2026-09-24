@@ -42,6 +42,14 @@ if [ ! -d "$DOCROOT" ]; then
   exit 1
 fi
 
+# An empty DOCROOT means nothing has been published yet (first-time deploy),
+# not that the CMS deleted every file - mirroring that in would wipe public/
+# and push the deletion to origin/main. Nothing to sync yet, so skip.
+if [ -z "$(ls -A "$DOCROOT" 2>/dev/null)" ]; then
+  echo "==> DOCROOT is empty (nothing published yet) - skipping CMS sync."
+  exit 0
+fi
+
 LOCK_FILE="/tmp/scouts-vremde-sync-cms.lock"
 exec 9>"$LOCK_FILE"
 if ! flock -n 9; then
