@@ -50,29 +50,25 @@ main {
    Scroll Reveal Animations
    ========================================================================== */
 
-.reveal,
-.reveal-left,
-.reveal-right {
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
     transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
                 transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Hidden pre-animation state is opt-in via JS (animations.js), not the
-   default — content must stay visible when that script doesn't run
-   (e.g. SurrealCMS's editor/block previews don't execute it). */
-.reveal.reveal-pending {
-    opacity: 0;
-    transform: translateY(24px);
-}
-
-.reveal-left.reveal-pending {
+.reveal-left {
     opacity: 0;
     transform: translateX(-24px);
+    transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.reveal-right.reveal-pending {
+.reveal-right {
     opacity: 0;
     transform: translateX(24px);
+    transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal.revealed,
@@ -192,10 +188,7 @@ nav {
 @media (prefers-reduced-motion: reduce) {
     .reveal,
     .reveal-left,
-    .reveal-right,
-    .reveal.reveal-pending,
-    .reveal-left.reveal-pending,
-    .reveal-right.reveal-pending {
+    .reveal-right {
         opacity: 1;
         transform: none;
         transition: none;
@@ -213,5 +206,14 @@ nav {
     #mobile-menu,
     #mobile-info-menu {
         transition: none;
+    }
+}
+
+@media (scripting: none) {
+    .reveal,
+    .reveal-left,
+    .reveal-right {
+        opacity: 1;
+        transform: none;
     }
 }
