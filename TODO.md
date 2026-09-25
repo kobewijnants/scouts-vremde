@@ -4,10 +4,6 @@
 
 ## Security
 
-- [ ] **Disable unused modules** – `a2dismod` anything you don't need (server-side)
-- [ ] **Set proper file permissions** – `chmod 644` for files, `755` for directories (server-side)
-- [ ] **Keep Apache updated** – `sudo apt update && sudo apt upgrade` (server-side)
-- [ ] **Configure a firewall** – Use `ufw` to only allow ports 80, 443, and SSH (server-side)
 - [x] **Move inline scripts to external JS files** – Allows removing `'unsafe-inline'` from CSP `script-src` (nav active-page script, janneman toggle, error page year)
 - [x] **Remove `fonts.googleapis.com` from CSP `script-src`** – Google Fonts doesn't serve scripts; only needed in `style-src`
 - [x] **Add `object-src 'none'` to CSP** – Blocks plugin content (Flash, etc.)
