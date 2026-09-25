@@ -61,7 +61,7 @@ scouts-vremde/
 ## Key Info
 
 - **Full name**: Scouts & Gidsen Sint-Jan in d'Olie Vremde
-- **Address**: Broechemsesteenweg 100, 2531 Boechout
+- **Address**: Broechemsesteenweg 100, 2531 Vremde
 - **Facebook**: https://www.facebook.com/groups/783501543832521/
 - **Groepsleiding email**: groepsleiding@scoutsvremde.be
 - **Materiaal verhuur email**: materiaal@scoutsvremde.be
