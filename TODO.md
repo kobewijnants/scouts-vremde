@@ -114,6 +114,11 @@
 
 - Verify security headers are being served (HSTS, CSP, X-Frame-Options, etc.)
 
+## My TODO's
+
+- review apache browser caching settings
+- setup inschrijvingen pagina + homepagina link
+
 ## Kabouter leiding toevoegen
 
 - [x] Kabouter leiding toegevoegd (Trix, Flobe, Marie, Danae, Floor, Gina)
