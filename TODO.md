@@ -29,6 +29,7 @@
 
 - **Use Virtual Hosts** – Even for a single site, configure properly
 - **Redirect www to non-www** (or vice versa) for canonical URLs
+- [ ] **Remove `/subsidies` → `/tegemoetkomingen` redirect** (not before 2026-10-26) – Page was renamed 2026-09-26; once Google reindexes the new URL and traffic to the old one drops off, delete the `RewriteRule ^subsidies$ /tegemoetkomingen` line from `.htaccess`
 
 ---
 

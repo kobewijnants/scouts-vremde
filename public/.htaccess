@@ -20,6 +20,9 @@ AddOutputFilter INCLUDES .html
 
 # Clean URLs: /pages/foo.html → /foo
 <IfModule mod_rewrite.c>
+    # Renamed pages (old URL → new clean URL)
+    RewriteRule ^subsidies$ /tegemoetkomingen [R=301,L]
+
     # Redirect /pages/foo.html → /foo (301 permanent)
     RewriteCond %{THE_REQUEST} \s/pages/([^.]+)\.html[\s?] [NC]
     RewriteRule ^ /%1 [R=301,L]

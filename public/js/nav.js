@@ -74,7 +74,7 @@ document.querySelectorAll('.current-year').forEach(function(el) {
 (function() {
     var path = window.location.pathname;
     var activePage = 'index';
-    var infoPages = ['scouting','subsidies','uniform','nieuwe-leden','rvb','verloren-voorwerpen','scouting-op-maat'];
+    var infoPages = ['scouting','tegemoetkomingen','uniform','nieuwe-leden','rvb','verloren-voorwerpen','scouting-op-maat'];
     var segments = path.split('/').filter(Boolean);
     if (segments.length > 0) {
         var page = segments[segments.length - 1].replace('.html', '');
