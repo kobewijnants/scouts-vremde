@@ -59,7 +59,7 @@
 - [x] **Add `<lastmod>` dates to sitemap.xml** – Also added missing tak-leiding entry
 - [x] **Fix Lighthouse CI to scan canonical URLs** – Now scans `/takken` instead of `/pages/takken.html`
 - [x] **Fill in missing `<meta name="description">` on all pages**
-- [ ] **Import site into Bing Webmaster Tools** – Use the "Import from Google Search Console" feature (~2 min once GSC is verified) to speed up Bing/DuckDuckGo indexing, since DuckDuckGo sources much of its index from Bing
+- [x] **Import site into Bing Webmaster Tools** – Imported from Google Search Console to speed up Bing/DuckDuckGo indexing (2026-09-26)
 
 ---
 
