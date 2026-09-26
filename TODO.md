@@ -81,6 +81,7 @@
 - [x] **Add Info sub-pages to the footer** – Added Scouting, Nieuwe leden, Uniform, Subsidies, Scouting op maat
 - [x] **Fix empty Kabouters janneman section** – Now uses uploaded janneman images
 - [x] **Standardize janneman content format** – All tak pages now use consistent webp image format
+- [ ] **Re-enable cookie consent banner on Firefox mobile** (review ~2026-11-26) – Accept/Decline buttons don't respond to taps on Firefox for Android (works fine on Chrome mobile and desktop Firefox); tried `touch-action: manipulation` on the buttons, didn't help. Banner is currently hidden entirely for Firefox-on-Android UAs (`public/js/consent.js`), defaulting to no analytics for those visitors. Check if Firefox has fixed it, then remove the UA check.
 
 ---
 

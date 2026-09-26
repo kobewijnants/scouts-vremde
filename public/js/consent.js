@@ -17,6 +17,12 @@
         window.gtag('config', GA_ID, { anonymize_ip: true });
     }
 
+    // Firefox for Android has a bug where the banner's buttons don't
+    // respond to taps (works fine on Chrome mobile / desktop Firefox).
+    // Skip showing it there until Firefox fixes it — see TODO.md.
+    var isFirefoxAndroid = /Android/.test(navigator.userAgent) && /Firefox/.test(navigator.userAgent);
+    if (isFirefoxAndroid) return;
+
     var consent = localStorage.getItem(CONSENT_KEY);
     if (consent === 'accepted') {
         loadAnalytics();
