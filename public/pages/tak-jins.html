@@ -9,10 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script src="../js/tailwind.config.js"></script>
+  <link href="../css/tailwind.css" rel="stylesheet">
   <link href="../css/styles.css" rel="stylesheet">
-  <link rel="preload" as="image" type="image/webp" href="/img/jins/jins.webp">
+  <link rel="preload" as="image" type="image/webp" href="/img/jins/jins.webp" fetchpriority="high">
   <meta name="description"
         content="De Jins van Scouts Vremde: het laatste jaar als lid. Samen werken aan een droomreis en voorbereiden op leiding worden.">
   <meta property="og:title" content="Jins - Scouts Vremde">
@@ -33,7 +32,7 @@
     <section class="relative h-[400px] md:h-[614px] flex items-center overflow-hidden">
       <div class="absolute inset-0 z-0">
         <img class="w-full h-full object-cover" alt="De Jins samen op een feest in hun lokaal"
-             src="../img/jins/jins.webp">
+             src="../img/jins/jins.webp" fetchpriority="high">
         <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent"></div>
       </div>
       <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">

@@ -9,10 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script src="../js/tailwind.config.js"></script>
+  <link href="../css/tailwind.css" rel="stylesheet">
   <link href="../css/styles.css" rel="stylesheet">
-  <link rel="preload" as="image" type="image/webp" href="/img/verkenners/verkenners.webp">
+  <link rel="preload" as="image" type="image/webp" href="/img/verkenners/verkenners.webp" fetchpriority="high">
   <meta name="description"
         content="De Verkenners van Scouts Vremde: jongens van 14 tot 17 jaar gaan op expeditie, pionieren en beleven outdoor-avonturen.">
   <meta property="og:title" content="Verkenners - Scouts Vremde">
@@ -33,7 +32,7 @@
     <section class="relative h-[400px] md:h-[614px] flex items-center overflow-hidden">
       <div class="absolute inset-0 z-0">
         <img class="w-full h-full object-cover"
-             alt="Verkenners in groep tijdens een lasergame-uitstap" src="../img/verkenners/verkenners.webp">
+             alt="Verkenners in groep tijdens een lasergame-uitstap" src="../img/verkenners/verkenners.webp" fetchpriority="high">
         <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent"></div>
       </div>
       <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">

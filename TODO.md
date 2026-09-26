@@ -121,6 +121,14 @@
 
 ## Pagespeed insights
 
+Mobile PSI report flagged a 55/100 performance score (LCP 5.0s, TBT 570ms), root-caused via a local Lighthouse audit to the Tailwind CDN script recompiling all utility classes in-browser on every page load, plus an oversized hero image and non-deferred scripts (2026-09-26):
+
+- [x] **Replace Tailwind CDN with a precompiled static CSS file** – Added `npm run build:css` (Tailwind CLI), removed `cdn.tailwindcss.com` `<script>` + `js/tailwind.config.js` from all 24 pages, committed `public/css/tailwind.css`
+- [x] **Tighten CSP now that the CDN/JIT compiler is gone** – Removed `https://cdn.tailwindcss.com` and `'unsafe-eval'` from `script-src`
+- [x] **Defer non-critical scripts** – Added `defer` to `nav.js`, `animations.js`, `consent.js`
+- [x] **Add a resized (900w) homepage hero variant** – `srcset`/`sizes` on `index.html`'s hero `<img>` and matching `imagesrcset`/`imagesizes` on its preload link (262KB → ~101KB at mobile widths)
+- [x] **Actually add `fetchpriority="high"` to hero images** – Previous checkbox above was stale; it wasn't in the markup on any page
+
 ## bing webmaster url inspection
 
 On the homepage it says:
