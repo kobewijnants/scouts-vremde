@@ -64,7 +64,12 @@ ServerSignature Off
     AddOutputFilterByType DEFLATE text/html text/plain text/css
     AddOutputFilterByType DEFLATE application/javascript application/json
     AddOutputFilterByType DEFLATE image/svg+xml application/xml text/xml
-    AddOutputFilterByType DEFLATE application/font-woff application/font-woff2
+
+    # Tell intermediate caches the response varies by encoding, so a
+    # gzip-capable client's cached copy is never handed to a client that isn't
+    <IfModule mod_headers.c>
+        Header append Vary Accept-Encoding
+    </IfModule>
 </IfModule>
 
 # Enable browser caching
@@ -76,11 +81,13 @@ ServerSignature Off
     ExpiresByType image/png "access plus 1 week"
     ExpiresByType image/webp "access plus 1 week"
     ExpiresByType image/svg+xml "access plus 1 week"
-    ExpiresByType text/css "access plus 1 week"
-    ExpiresByType application/javascript "access plus 1 week"
     ExpiresByType application/pdf "access plus 1 week"
-    ExpiresByType application/font-woff "access plus 1 week"
-    ExpiresByType application/font-woff2 "access plus 1 week"
+
+    # CSS/JS are edited in place with no cache-busting (no build step), so
+    # keep this short - long caching here risks returning visitors sitting on
+    # a stale/broken nav or stylesheet for the rest of the TTL after a deploy
+    ExpiresByType text/css "access plus 1 hour"
+    ExpiresByType application/javascript "access plus 1 hour"
 </IfModule>
 
 # KeepAlive

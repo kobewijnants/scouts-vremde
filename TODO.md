@@ -112,7 +112,7 @@
 
 ## My TODO's
 
-- review apache browser caching settings
+- [x] review apache browser caching settings
 - setup inschrijvingen pagina + homepagina link
 
 ## Kabouter leiding toevoegen
