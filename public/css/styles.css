@@ -186,22 +186,12 @@ nav {
    ========================================================================== */
 
 #cookie-consent {
-    /* Mobile browsers (esp. Firefox for Android) can render their own
-       toolbar over fixed bottom-anchored elements, so the banner slides
-       in from the top on mobile and only docks to the bottom on desktop,
-       where that toolbar-overlap bug doesn't apply. */
-    transform: translateY(-150%);
+    transform: translateY(150%);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 #cookie-consent.consent-visible {
     transform: translateY(0);
-}
-
-@media (min-width: 768px) {
-    #cookie-consent {
-        transform: translateY(150%);
-    }
 }
 
 /* ==========================================================================

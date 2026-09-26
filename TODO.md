@@ -117,7 +117,20 @@
 - [x] review apache browser caching settings
 - setup inschrijvingen pagina + homepagina link
 
-## Kabouter leiding toevoegen
+## Pagespeed insights
 
-- [x] Kabouter leiding toegevoegd (Trix, Flobe, Marie, Danae, Floor, Gina)
-- [x] Trix Slaets telefoonnummer gecorrigeerd naar 0468516456
+## bing webmaster url inspection
+
+On the homepage it says:
+3 SEO/GEO issues found
+Warning
+Meta Language tag missing
+1 instance found
+
+Notice
+Alt attribute for images is missing
+3 instances found
+
+Error
+H1 tag missing
+1 instance found
