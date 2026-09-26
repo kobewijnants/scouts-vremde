@@ -116,6 +116,7 @@
 
 - [x] review apache browser caching settings
 - setup inschrijvingen pagina + homepagina link
+- bekijk hier janneman pdf isn't working on at least chrome mobile, firefox on linux works
 
 ## Pagespeed insights
 
