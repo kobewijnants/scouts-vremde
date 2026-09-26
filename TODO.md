@@ -28,7 +28,7 @@
 ## Configuration
 
 - **Use Virtual Hosts** – Even for a single site, configure properly
-- **Redirect www to non-www** (or vice versa) for canonical URLs
+- [x] **Redirect www to non-www** (or vice versa) for canonical URLs – Vhost already redirects apex → `www`; aligned `sitemap.xml`, `robots.txt`, and all `canonical`/`og:url` tags to `https://www.scoutsvremde.be` to match (2026-09-26)
 - [ ] **Remove `/subsidies` → `/tegemoetkomingen` redirect** (not before 2026-10-26) – Page was renamed 2026-09-26; once Google reindexes the new URL and traffic to the old one drops off, delete the `RewriteRule ^subsidies$ /tegemoetkomingen` line from `.htaccess`
 
 ---
@@ -59,6 +59,7 @@
 - [x] **Add `<lastmod>` dates to sitemap.xml** – Also added missing tak-leiding entry
 - [x] **Fix Lighthouse CI to scan canonical URLs** – Now scans `/takken` instead of `/pages/takken.html`
 - [x] **Fill in missing `<meta name="description">` on all pages**
+- [ ] **Import site into Bing Webmaster Tools** – Use the "Import from Google Search Console" feature (~2 min once GSC is verified) to speed up Bing/DuckDuckGo indexing, since DuckDuckGo sources much of its index from Bing
 
 ---
 
